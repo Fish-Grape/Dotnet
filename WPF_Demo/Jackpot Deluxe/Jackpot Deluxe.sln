@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Blend for Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jackpot Deluxe", "Jackpot Deluxe\Jackpot Deluxe.csproj", "{D3A09C01-FB4A-4A2E-A12A-C1878E2D6B6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCustomControl", "..\MyCustomControl\MyCustomControl\MyCustomControl.csproj", "{DC574034-9FD3-4299-B099-268DA519B4EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3A09C01-FB4A-4A2E-A12A-C1878E2D6B6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A09C01-FB4A-4A2E-A12A-C1878E2D6B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A09C01-FB4A-4A2E-A12A-C1878E2D6B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A09C01-FB4A-4A2E-A12A-C1878E2D6B6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC574034-9FD3-4299-B099-268DA519B4EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC574034-9FD3-4299-B099-268DA519B4EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC574034-9FD3-4299-B099-268DA519B4EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC574034-9FD3-4299-B099-268DA519B4EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CAF337B5-D178-44EA-B871-10DCA111FB90}
+	EndGlobalSection
+EndGlobal
