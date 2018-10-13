@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="Jackpot_Deluxe.StarButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Jackpot_Deluxe"
+             mc:Ignorable="d" 
+             d:DesignHeight="109.584" d:DesignWidth="115.849">
+    <Grid x:Name="grid" MouseDown="StarControl_MouseDown" MouseEnter="StarControl_MouseEnter" MouseLeave="StarControl_MouseLeave" RenderTransformOrigin="0.5,0.5" Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="78*"/>
+            <RowDefinition Height="31*"/>
+        </Grid.RowDefinitions>
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="MouseStateGroup">
+                <VisualStateGroup.Transitions>
+                    <VisualTransition GeneratedDuration="0:0:1" To="MouseDownStar">
+                        <Storyboard>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="grid">
+                                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-24.84"/>
+                                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="44.112"/>
+                                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-1.244"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="path">
+                                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="24.914"/>
+                                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.241"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualTransition>
+                    <VisualTransition GeneratedDuration="0" To="MouseExitStar">
+                        <Storyboard/>
+                    </VisualTransition>
+                </VisualStateGroup.Transitions>
+                <VisualState x:Name="MouseDownStar"/>
+                <VisualState x:Name="MouseExitStar"/>
+                <VisualState x:Name="MouseEnterStar"/>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <Path x:Name="path" Data="M304.00464,175.50812 C315.85534,174.9438 327.74415,174.3999 339.50348,173.41995 351.07144,172.45596 348.87287,177.32262 346.81206,156.71462 346.10174,149.61134 344.51294,138.34304 347.85615,131.65661 362.16245,145.96291 370.95656,151.36414 373.95824,172.37587 374.93305,179.19956 409.33265,177.01203 418.85383,181.77262 411.90678,181.77262 372.91415,175.01765 372.91415,185.94896 372.91415,199.26591 378.13457,215.51564 378.13457,230.84455 370.47985,217.44878 361.83649,209.41488&#xA;356.20882,195.34571 341.51359,210.04094 330.00184,226.7731 316.53364,240.2413 310.29096,224.6346 320.31782,203.48107 344.7239,195.34571 342.35372,189.42026 324.90089,191.17666 316.53364,186.99304 309.52517,183.4888 308.40109,180.20163 304.00464,175.50812 z" Fill="#FFE6DF52" HorizontalAlignment="Left" Height="109.584" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="115.849" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+    </Grid>
+</UserControl>
