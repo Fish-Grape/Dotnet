@@ -1,0 +1,16 @@
+C:\Users\Administrator\source\repos\WebAPIDemo\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.deps.json
+C:\Users\Administrator\source\repos\WebAPIDemo\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.runtimeconfig.json
+C:\Users\Administrator\source\repos\WebAPIDemo\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\WebAPIDemo\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.dll
+C:\Users\Administrator\source\repos\WebAPIDemo\ConsoleApp1\bin\Debug\netcoreapp2.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Administrator\source\repos\WebAPIDemo\ConsoleApp1\bin\Debug\netcoreapp2.1\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Administrator\source\repos\WebAPIDemo\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\WebAPIDemo\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\WebAPIDemo\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\WebAPIDemo\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\WebAPIDemo\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csproj.CopyComplete
+C:\Users\Administrator\source\repos\WebAPIDemo\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.pdb
+C:\Users\Administrator\source\repos\WebAPIDemo\ConsoleApp1\bin\Debug\netcoreapp2.1\WebAPIDemo.dll
+C:\Users\Administrator\source\repos\WebAPIDemo\ConsoleApp1\bin\Debug\netcoreapp2.1\WebAPIDemo.pdb
+C:\Users\Administrator\source\repos\WebAPIDemo\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.dll
+C:\Users\Administrator\source\repos\WebAPIDemo\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.pdb
