@@ -1,0 +1,11 @@
+C:\Users\Administrator\source\repos\CalculateDemo\CalculateDemo\bin\Debug\netcoreapp2.1\CalculateDemo.deps.json
+C:\Users\Administrator\source\repos\CalculateDemo\CalculateDemo\bin\Debug\netcoreapp2.1\CalculateDemo.runtimeconfig.json
+C:\Users\Administrator\source\repos\CalculateDemo\CalculateDemo\bin\Debug\netcoreapp2.1\CalculateDemo.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\CalculateDemo\CalculateDemo\bin\Debug\netcoreapp2.1\CalculateDemo.dll
+C:\Users\Administrator\source\repos\CalculateDemo\CalculateDemo\bin\Debug\netcoreapp2.1\CalculateDemo.pdb
+C:\Users\Administrator\source\repos\CalculateDemo\CalculateDemo\obj\Debug\netcoreapp2.1\CalculateDemo.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\CalculateDemo\CalculateDemo\obj\Debug\netcoreapp2.1\CalculateDemo.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\CalculateDemo\CalculateDemo\obj\Debug\netcoreapp2.1\CalculateDemo.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\CalculateDemo\CalculateDemo\obj\Debug\netcoreapp2.1\CalculateDemo.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\CalculateDemo\CalculateDemo\obj\Debug\netcoreapp2.1\CalculateDemo.dll
+C:\Users\Administrator\source\repos\CalculateDemo\CalculateDemo\obj\Debug\netcoreapp2.1\CalculateDemo.pdb
