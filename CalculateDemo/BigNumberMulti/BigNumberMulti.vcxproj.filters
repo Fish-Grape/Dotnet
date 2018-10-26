@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\动态规划">
+      <UniqueIdentifier>{71910e95-291f-47d6-8011-e7d7280f19b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\分治法">
+      <UniqueIdentifier>{7ea5eb99-d3af-473a-8c19-491b5370b240}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\回溯法">
+      <UniqueIdentifier>{82418a9c-566a-44a3-98ea-17d4335894d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\分支限界法">
+      <UniqueIdentifier>{28d39795-6b8d-4bcd-b26a-09bc8fce7f08}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BigNumberMulti.cpp">
+      <Filter>源文件\分治法</Filter>
+    </ClCompile>
+    <ClCompile Include="Program.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MostCommonQueue.cpp">
+      <Filter>源文件\动态规划</Filter>
+    </ClCompile>
+    <ClCompile Include="EightQueenCal.cpp">
+      <Filter>源文件\回溯法</Filter>
+    </ClCompile>
+    <ClCompile Include="SupermarketCal.cpp">
+      <Filter>源文件\分支限界法</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

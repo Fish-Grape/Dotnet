@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CalculateDemo.Example.HuffmanTree
+namespace CalculateDemo.Example
 {
     public class HuffmanTree
     {
@@ -36,7 +36,7 @@ namespace CalculateDemo.Example.HuffmanTree
         {
             int i, j, x1, x2;
             double m1, m2;
-            for (i=0;i<2*-1;i++)
+            for (i=0;i<2*n-1;i++)
             {
                 HuffNode[i].weight=0;
                 HuffNode[i].parent=-1;
@@ -44,12 +44,12 @@ namespace CalculateDemo.Example.HuffmanTree
                 HuffNode[i].rchild= -1;
             }
             Console.WriteLine("请输入value和位权");
-            HuffNode[0].weight = 0.05;
-            HuffNode[1].weight = 0.32;
-            HuffNode[2].weight = 0.18;
-            HuffNode[3].weight = 0.07;
-            HuffNode[4].weight = 0.25;
-            HuffNode[5].weight = 0.13;
+            HuffNode[0].weight = 5;
+            HuffNode[1].weight = 32;
+            HuffNode[2].weight = 18;
+            HuffNode[3].weight = 7;
+            HuffNode[4].weight = 25;
+            HuffNode[5].weight = 13;
             HuffNode[0].value = 'a';
             HuffNode[1].value = 'b';
             HuffNode[2].value = 'c';
@@ -60,7 +60,7 @@ namespace CalculateDemo.Example.HuffmanTree
             {
                 m1 = m2 = MAXVALUE;
                 x1 = x2 = 0;
-                for (j=0;j<n+1;j++)
+                for (j=0;j<n+i;j++)
                 {
                     if (HuffNode[j].weight < m1 && HuffNode[j].parent == -1)
                     {
@@ -77,9 +77,9 @@ namespace CalculateDemo.Example.HuffmanTree
                 }
                 HuffNode[x1].parent = n + i;
                 HuffNode[x2].parent = n + i;
-                HuffNode[n + 1].weight = m1 + m2;
-                HuffNode[n + 1].lchild = x1;
-                HuffNode[n + 1].rchild = x2;
+                HuffNode[n + i].weight = m1 + m2;
+                HuffNode[n + i].lchild = x1;
+                HuffNode[n + i].rchild = x2;
                 Console.WriteLine($"x1.weight:{HuffNode[x1].weight},x2.weight:{HuffNode[x2].weight}");
             }
         }
@@ -111,15 +111,20 @@ namespace CalculateDemo.Example.HuffmanTree
 
         public static void init()
         {
+            for (int k=0;k<30;k++)
+            {
+                HuffCode[k] = new HCodeType(new int[MAXBIT], 0);
+            }
             int i, j, n;
             Console.WriteLine("请输入n");
             n = Convert.ToInt32(Console.ReadLine());
             Huffman_Tree(HuffNode,n);
             HuffmanCode(HuffCode,n);
             for (i=0;i<n;i++) {
-                Console.WriteLine($"Huffman code is:{HuffNode[i].value}");
+                Console.Write($"Huffman code is:{HuffNode[i].value} ");
                 for (j = HuffCode[i].start + 1; j < n; j++)
-                    Console.WriteLine(HuffCode[i].bit[j]);
+                    Console.Write(HuffCode[i].bit[j]);
+                Console.WriteLine();
             }
 
         }

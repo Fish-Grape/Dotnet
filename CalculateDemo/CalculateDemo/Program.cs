@@ -1,5 +1,6 @@
 ﻿using CalculateDemo.Example;
-using CalculateDemo.Example.HuffmanTree;
+using CalculateDemo.Example.DividCal;
+using CalculateDemo.Example.GreedyCal;
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
@@ -10,8 +11,10 @@ namespace CalculateDemo
     {
         static void Main(string[] args)
         {
+            //计时开始
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
+            #region 贪心算法
             //Task t = new Task(()=> Console.WriteLine(Fib1(50)));
             //Console.WriteLine("用时:"+ stopwatch.Elapsed);
 
@@ -42,9 +45,36 @@ namespace CalculateDemo
 
             //Dijkstra.init();
 
-            HuffmanTree.init();
+            //HuffmanTree.init();
+
+            //MinimumTree.init();
+            #endregion
+
+            #region 分治法
+            //WanderNumGame.init();
+
+            //MergeOrder.init();
+
+            //QuicklyOrder.init();
+
+            BigNumberMulti.init();
+
+
+            #endregion
+
+            //计时结束
+            stopwatch.Stop();
+            Console.WriteLine("耗时：");
+            Console.WriteLine(stopwatch.Elapsed);
+
+            
         }
 
+        /// <summary>
+        /// 斐波那契序列,求 s=1+1+2+3+5+8+..+n
+        /// </summary>
+        /// <param name="n">求和总数</param>
+        /// <returns>s</returns>
         public static int Fib1(int n)
         {
             if (n < 0)
@@ -54,6 +84,11 @@ namespace CalculateDemo
             return Fib1(n - 1) + Fib1(n - 2);
         }
 
+        /// <summary>
+        /// 斐波那契序列(采用动态规划法)
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
         public static int Fib2(int n)
         {
             if (n < 0)
