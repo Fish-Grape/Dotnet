@@ -1,0 +1,33 @@
+﻿  pch.cpp
+  Alibaba.cpp
+  BigNumberMulti.cpp
+  CalculateDemo.cpp
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\factorybestbenifit.cpp(114): warning C4309: “=”: 截断常量值
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\factorybestbenifit.cpp(120): warning C4305: “=”: 从“int”到“char”截断
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\factorybestbenifit.cpp(120): warning C4309: “=”: 截断常量值
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\factorybestbenifit.cpp(128): warning C4305: “=”: 从“double”到“float”截断
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\factorybestbenifit.cpp(143): warning C4305: “=”: 从“double”到“float”截断
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\factorybestbenifit.cpp(144): warning C4305: “=”: 从“double”到“float”截断
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\factorybestbenifit.cpp(145): warning C4305: “=”: 从“double”到“float”截断
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\factorybestbenifit.cpp(108): warning C4101: “j”: 未引用的局部变量
+  EightQueenCal.cpp
+  FactoryBestBenifit.cpp
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\factorybestbenifit.cpp(114): warning C4309: “=”: 截断常量值
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\factorybestbenifit.cpp(120): warning C4305: “=”: 从“int”到“char”截断
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\factorybestbenifit.cpp(120): warning C4309: “=”: 截断常量值
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\factorybestbenifit.cpp(128): warning C4305: “=”: 从“double”到“float”截断
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\factorybestbenifit.cpp(143): warning C4305: “=”: 从“double”到“float”截断
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\factorybestbenifit.cpp(144): warning C4305: “=”: 从“double”到“float”截断
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\factorybestbenifit.cpp(145): warning C4305: “=”: 从“double”到“float”截断
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\factorybestbenifit.cpp(108): warning C4101: “j”: 未引用的局部变量
+  HuffmanTree.cpp
+  MinimumTree.cpp
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\minimumtree.cpp(57): warning C4101: “v”: 未引用的局部变量
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\minimumtree.cpp(57): warning C4101: “w”: 未引用的局部变量
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\minimumtree.cpp(57): warning C4101: “u”: 未引用的局部变量
+  MostCommonQueue.cpp
+  SupermarketCal.cpp
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\supermarketcal.cpp(88): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+c:\users\administrator\source\repos\calculatedemo\calculatedemo\supermarketcal.cpp(101): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  正在生成代码...
+  CalculateDemo.vcxproj -> C:\Users\Administrator\source\repos\CalculateDemo\Debug\CalculateDemo.exe
