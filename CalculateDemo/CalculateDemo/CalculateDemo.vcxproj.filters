@@ -31,12 +31,15 @@
     <Filter Include="源文件\线性规划法">
       <UniqueIdentifier>{cac6a8f6-6583-4475-a5c3-5cf1e094b076}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\单向链表">
+      <UniqueIdentifier>{2d6cdb2e-2861-4312-9d69-0b6bfa1d49d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\正则加字符串操作">
+      <UniqueIdentifier>{ccee2857-7743-4f0a-b2e5-c8e293970aa0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="CalculateDemo.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -70,6 +73,15 @@
     </ClCompile>
     <ClCompile Include="FactoryBestBenifit.cpp">
       <Filter>源文件\线性规划法</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickSort.cpp">
+      <Filter>源文件\分治法</Filter>
+    </ClCompile>
+    <ClCompile Include="ChainList.cpp">
+      <Filter>源文件\单向链表</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexAndString.cpp">
+      <Filter>源文件\正则加字符串操作</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
