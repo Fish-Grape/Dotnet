@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\链表">
+      <UniqueIdentifier>{366fd4c8-a82a-41a0-a9d9-71fb365e30c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\栈">
+      <UniqueIdentifier>{231fb76a-43be-46b8-b705-acc1e2c82fd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\队列">
+      <UniqueIdentifier>{870a7fe8-8ade-4b92-8e84-36670feb5bc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\集合">
+      <UniqueIdentifier>{3e3d366b-03b8-458a-9032-f7ec126216c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\哈希表">
+      <UniqueIdentifier>{568d83c9-7872-4e0a-bb0a-bef73ae0dcd7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dlist.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="queue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="set.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="chtbl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ListElmtImpl.cpp">
+      <Filter>源文件\链表</Filter>
+    </ClCompile>
+    <ClCompile Include="list.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stack.cpp">
+      <Filter>源文件\栈</Filter>
+    </ClCompile>
+    <ClCompile Include="queue.cpp">
+      <Filter>源文件\队列</Filter>
+    </ClCompile>
+    <ClCompile Include="set.cpp">
+      <Filter>源文件\集合</Filter>
+    </ClCompile>
+    <ClCompile Include="hashpjw.cpp">
+      <Filter>源文件\哈希表</Filter>
+    </ClCompile>
+    <ClCompile Include="chtbl.cpp">
+      <Filter>源文件\哈希表</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,3 @@
+﻿  DataStructure.cpp
+c:\users\administrator\source\repos\datastructure\datastructure\datastructure.cpp(105): error C2664: “int chtbl_init(CHTbL *,int,int (__cdecl *)(const void *),int (__cdecl *)(const void *,const void *),void (__cdecl *)(void *))”: 无法将参数 3 从“int”转换为“int (__cdecl *)(const void *)”
+  c:\users\administrator\source\repos\datastructure\datastructure\datastructure.cpp(105): note: 从整型强制转换为指针类型要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
