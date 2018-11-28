@@ -1,0 +1,126 @@
+2018-11-27 17:02:18.2196 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: ErrorFile
+2018-11-27 17:08:32.1356 Error Parsing configuration from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config.  ---> NLog.NLogConfigurationException: Target allfile not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.ParseTopLevel(NLogXmlElement content, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2018-11-27 17:08:32.1356 Warn Failed loading config from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config. Invalid XML?
+2018-11-27 17:53:46.5906 Error Parsing configuration from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config.  ---> NLog.NLogConfigurationException: Target allfile not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.ParseTopLevel(NLogXmlElement content, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2018-11-27 17:53:46.5906 Warn Failed loading config from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config. Invalid XML?
+2018-11-27 17:56:03.5406 Error Parsing configuration from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config.  ---> NLog.NLogConfigurationException: Target allfile not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.ParseTopLevel(NLogXmlElement content, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2018-11-27 17:56:03.5406 Warn Failed loading config from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config. Invalid XML?
+2018-11-27 17:56:43.2926 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: ErrorFile
+2018-11-27 17:58:29.9016 Error Parsing configuration from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config.  ---> NLog.NLogConfigurationException: Target allfile not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.ParseTopLevel(NLogXmlElement content, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2018-11-27 17:58:38.1616 Error Parsing configuration from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config.  ---> NLog.NLogConfigurationException: Target allfile not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.ParseTopLevel(NLogXmlElement content, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2018-11-27 17:58:44.4796 Error Parsing configuration from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config.  ---> NLog.NLogConfigurationException: Target allfile not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.ParseTopLevel(NLogXmlElement content, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2018-11-27 17:58:47.3856 Error Parsing configuration from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config.  ---> NLog.NLogConfigurationException: Target allfile not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.ParseTopLevel(NLogXmlElement content, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2018-11-27 17:59:16.2066 Error Parsing configuration from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config.  ---> NLog.NLogConfigurationException: Target allfile not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.ParseTopLevel(NLogXmlElement content, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2018-11-27 18:00:53.9966 Error Parsing configuration from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config.  ---> NLog.NLogConfigurationException: Target allfile not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.ParseTopLevel(NLogXmlElement content, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2018-11-27 18:01:20.8426 Error Parsing configuration from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config.  ---> NLog.NLogConfigurationException: Target allfile not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.ParseTopLevel(NLogXmlElement content, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2018-11-27 18:01:24.4996 Error Parsing configuration from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config.  ---> NLog.NLogConfigurationException: Target allfile not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.ParseTopLevel(NLogXmlElement content, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2018-11-27 18:01:56.8646 Error Parsing configuration from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config.  ---> NLog.NLogConfigurationException: Target allfile not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.ParseTopLevel(NLogXmlElement content, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2018-11-27 18:01:56.8646 Warn NLog configuration while reloading Exception: NLog.NLogConfigurationException: Configuration.Reload() failed. Invalid XML?
+   at NLog.LogFactory.ReloadConfigOnTimer(Object state)
+2018-11-27 18:02:21.0876 Error Parsing configuration from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config.  ---> NLog.NLogConfigurationException: Target allfile not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.ParseTopLevel(NLogXmlElement content, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2018-11-27 18:02:21.0876 Warn Failed loading config from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config. Invalid XML?
+2018-11-27 18:03:03.8486 Error Parsing configuration from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config.  ---> NLog.NLogConfigurationException: Target allfile not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.ParseTopLevel(NLogXmlElement content, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2018-11-27 18:03:03.8486 Warn NLog configuration while reloading Exception: NLog.NLogConfigurationException: Configuration.Reload() failed. Invalid XML?
+   at NLog.LogFactory.ReloadConfigOnTimer(Object state)
+2018-11-27 18:03:07.9826 Error Parsing configuration from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config.  ---> NLog.NLogConfigurationException: Target allfile not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.ParseTopLevel(NLogXmlElement content, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2018-11-27 18:03:07.9826 Warn NLog configuration while reloading Exception: NLog.NLogConfigurationException: Configuration.Reload() failed. Invalid XML?
+   at NLog.LogFactory.ReloadConfigOnTimer(Object state)
+2018-11-27 18:03:09.8086 Error Parsing configuration from C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\Administrator\source\repos\UniversityTutorManageSys\UniversityTutorManageSys/Config/nlog.config.  ---> NLog.NLogConfigurationException: Target allfile not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.ParseTopLevel(NLogXmlElement content, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2018-11-27 18:03:09.8086 Warn NLog configuration while reloading Exception: NLog.NLogConfigurationException: Configuration.Reload() failed. Invalid XML?
+   at NLog.LogFactory.ReloadConfigOnTimer(Object state)
