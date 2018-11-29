@@ -45,6 +45,7 @@
     <None Include="wwwroot\js\qrcodejs\qrcode.js" />
     <None Include="wwwroot\js\qrcodejs\qrcode.min.js" />
     <None Include="wwwroot\js\viewer\viewer.js" />
+    <None Include="wwwroot\ProjResource\css\Home\Index.css" />
     <None Include="wwwroot\ueditor\dialogs\attachment\attachment.js" />
     <None Include="wwwroot\ueditor\dialogs\background\background.js" />
     <None Include="wwwroot\ueditor\dialogs\charts\chart.config.js" />

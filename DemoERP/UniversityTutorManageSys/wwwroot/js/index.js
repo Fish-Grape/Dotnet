@@ -69,7 +69,7 @@ function addTab(tabid, tabTitle, url, data) {
         $.each($("#tabs").find("li.tabli"), function (n, value) {
             width += $(value).width();
         });
-        //计算li的宽度与ul的宽度，超过设置则删除第二个创建的标签。望东升
+        //计算li的宽度与ul的宽度，超过设置则删除第二个创建的标签。
         if ($("#tabs").width() < width + 300) {
             var panelId = $('#tabs li:eq(1)').remove().attr("aria-controls");
             $("#" + panelId).remove();

@@ -4,106 +4,133 @@
     ViewData["Title"] = "Home Page";
 }
 @section head {
-<style type="text/css">
-    /*非常重要的样式让背景图片100%适应整个屏幕*/
-    .bg {
-        display: table;
-        width: 100%;
-        height: 100%;
-        padding: 100px 0;
-        text-align: center;
-        color: #fff;
-        background: url("/images/bg/reba4.jpg") no-repeat bottom center;
-        background-color: #000;
-        background-size: cover;
-    }
-
-    .my-navbar {
-        padding: 20px 0;
-        transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-        background: #000000;
-    }
-
-        .my-navbar a {
-            background: transparent !important;
-            color: #fff !important
-        }
-
-            .my-navbar a:hover {
-                color: #45bcf9 !important;
-                background: transparent;
-                outline: 0
-            }
-
-        .my-navbar a {
-            transition: color 0.5s ease-in-out;
-        }
-    /*-webkit-transition ;-moz-transition*/
-    .top-nav {
-        padding: 0;
-        background: #000;
-    }
-
-    button.navbar-toggle {
-        background-color: #fbfbfb;
-    }
-        /*整个背景都是transparent透明的，会看不到，所以再次覆盖一下*/
-        button.navbar-toggle > span.icon-bar {
-            background-color: #dedede
-        }
-
-    body, html {
-        min-width: 1300px;
-    }
-    </style>
-<script>
-
-</script>    
+<link rel="stylesheet" type="text/css" href="~/ProjResource/css/Home/Index.css">
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $("#my-navbar").hover(
+                    function () {
+                        $(this).css("z-index", 999);
+                    },
+                    function () {
+                        $(this).css("z-index", 0);
+                    })
+                $(window).scroll(function () {
+                    if ($(".navbar").offset().top > 50) {
+                        $(".navbar-fixed-top").addClass("top-nav");
+                    } else { $(".navbar-fixed-top").removeClass("top-nav"); }
+                })
+            })
+        })(jQuery);
+    </script>
 }
-<nav class="navbar navbar-fixed-top my-navbar" role="navigation">
+<nav class="navbar navbar-fixed-top my-navbar" id="my-navbar" role="navigation">
     <div class="head clearfix" id="index_head">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#example-navbar-collapse">
-                <span class="sr-only">切换导航</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="#" class="navbar-brand" data-toggle="dropdown" type="button">首页</a>
-        </div>
         <div class="navbar menu fl" id="example-navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">iOS</a></li>
+                <li class="dropdown">
+                    <a href="javascript:;" onclick="addTab('0','首页', '/');" class="navbar-brand" data-toggle="dropdown" type="button">
+                        首页
+                    </a>
+                </li>
                 @Html.Raw(ViewBag.Menu)
             </ul>
         </div>
     </div>
-</nav>   
-@*<div class="logo fl">
-    <img src="~/images/Login/logo_cd2.png" />
-</div>
-<div class="head clearfix" id="index_head">
-    <div class="navbar menu fl">
-        <ul class="nav">
-            <li class="dropdown">
-                <a href="javascript:;" onclick="addTab('0','首页', '/');" class="dropdown-toggle drop1" data-toggle="dropdown" type="button">
-                    首页
-                </a>
-            </li>
-            @Html.Raw(ViewBag.Menu)
-        </ul>
+</nav>
+
+<div class="content">
+    <div class="page_tabs">
+        <div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+            <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+                <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tabs-0" aria-labelledby="ui-id-1" aria-selected="true">
+                    <a href="#tabs-0" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">首页</a>
+                </li>
+            </ul>
+            <div id="tabs-0" class="tabs-0 ui-tabs-panel">
+                <div style="">
+
+
+                    @*<div class="index_daiban mt14">
+                            <div class="fz18 pr10">
+                                <span class="ver-t lh28">我的待办</span>
+                                <div class="toolbarNar ver-t index-toolbarNar clearfix ml20">
+                                    <a href="javascript:;" data-val="1" name="gddbbt" class="focus @(ViewBag.ListType == 1 ? "focus" : "")">全部待办</a>
+                                    <a href="javascript:;" data-val="2" name="gddbbt" class="@(ViewBag.ListType == 2 ? "focus" : "")">我申请的</a>
+                                    <a href="javascript:;" data-val="3" name="gddbbt" class="@(ViewBag.ListType == 3 ? "focus" : "")">我处理的</a>
+                                </div>
+                                <a class="blue fr mt5 fz15" href="javascript:;" onclick="addTab('HandlingList', '待办事宜', 'Handling/HandlingList')">更多>></a>
+                            </div>
+                            <div class="list">
+                                <table border="0" cellspacing="0" cellpadding="0" class="table_list table_list1  normal">
+                                    <tr>
+                                    </tr>
+                                    <tbody id="home_daibanlist">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>*@
+
+                    @*<div class="index-con clearfix mt25">
+                            <div class="left" style="width: 49%;height: 300px;">
+                                <div class="mt10 mb10 fz18">
+                                    通知信息
+                                    <div class="fr">
+                                        <a class="blue fz15" href="javascript:;" onclick="addTab('MessageList', '消息通知', 'Message/MessageList')">更多>></a>
+                                    </div>
+                                </div>
+                                <table border="0" cellspacing="0" cellpadding="0" class="table_list table_list1">
+                                    <tr><th>标题</th></tr>
+                                    <tbody id="home_messagelist"></tbody>
+                                </table>
+                            </div>
+                            <div class="right" style="width: 49%;height: 300px;">
+                                <div class="mt10 mb10 fz18">
+                                    资料归档
+                                    <div class="fr">
+                                        <a class="blue fz15" href="javascript:;" onclick="addTab('LoadAfterSaleList', '售后资料列表', 'LoanManage/LoadAfterSaleList')">更多>></a>
+                                    </div>
+                                </div>
+                                <table border="0" cellspacing="0" cellpadding="0" class="table_list table_list1">
+                                    <tr>
+                                        <th>编号</th>
+                                        <th>姓名</th>
+                                        <th>融资金额</th>
+                                        <th>放款日期</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    <tbody id="home_aftersaleinfolist"></tbody>
+                                </table>
+                            </div>
+                        </div>*@
+                </div>
+                <form id="frm">
+                    <button type="submit" class="btn btn-yellow hide">@*刷新*@</button>
+                </form>
+            </div>
+        </div>
     </div>
-</div>*@
-
+</div>
 <div class="bg"></div>
-<br /><br /><br /><br /><br /><br /><br /><p><a href="/Home/htmlpage" target="_blank">闲蛋客</a></p>
 
-<script type="text/javascript">
-    $(window).scroll(function () {
-        if ($(".navbar").offset().top > 50) {
-            $(".navbar-fixed-top").addClass("top-nav");
-        } else { $(".navbar-fixed-top").removeClass("top-nav"); }
-    })
-</script>
+<br /><br /><br /><br /><br /><br /><br /><p>
+</p>
 
+<script type="text/javascript" src="~/js/jquery.validate.js"></script>
+<script type="text/javascript" src="~/js/validate.js?v=99877763412"></script>
+<link rel="stylesheet" type="text/css" href="~/css/zTreeStyle/zTreeStyle.css" />
+<script type="text/javascript" src="~/js/jquery.ztree.core.min.js"></script>
+<script type="text/javascript" src="~/js/jquery.ztree.excheck.min.js"></script>
+<script type="text/javascript" src="~/js/jquery.ztree.exedit.min.js"></script>
+<script src="~/js/dmuploader.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="~/js/viewer/viewer.js?v=19882"></script>
+<!--环形 贷前报告用-->
+<script type="text/javascript" src="~/js/raphael.js?v=@(DateTime.Now)"></script>
+<script type="text/javascript" src="~/js/svgCircle.js?v=@(DateTime.Now)" charset="utf-8"></script>
+<script src="~/js/index.js?v=323218" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="~/js/jwplayer/jwplayer.js?v=@(DateTime.Now)"></script>
+@*加载打印控件*@
+<script type="text/javascript" src="/js/LodopFuncs.js?v=@(DateTime.Now)"></script>
+<script type="text/javascript" charset="utf-8" src="~/ueditor/ueditor.config.js?v=@(DateTime.Now)"></script>
+<script type="text/javascript" charset="utf-8" src="~/ueditor/ueditor.all.js?v=@(DateTime.Now)"></script>
+<script type="text/javascript" charset="utf-8" src="~/ueditor/lang/zh-cn/zh-cn.js?v=@(DateTime.Now)"></script>

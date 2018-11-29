@@ -32,16 +32,6 @@ namespace UniversityTutorManageSys.Controllers
             _menuSer = menuSer;
         }
 
-        //public IActionResult Index()
-        //{
-        //    using(var scope=Startup.AutofacContainer.BeginLifetimeScope())
-        //    {
-        //        IConfiguration config = scope.Resolve<IConfiguration>();
-        //        IHostingEnvironment env=scope.Resolve<IHostingEnvironment>();
-        //    }
-        //    return View();
-        //}
-
         #region 页面
 
         #region 首页
