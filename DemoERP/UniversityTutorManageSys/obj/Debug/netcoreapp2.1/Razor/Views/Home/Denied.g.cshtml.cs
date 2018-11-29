@@ -61,7 +61,7 @@ using UniversityTutorManageSys.Models;
             WriteLiteral("<html>\r\n");
             EndContext();
             BeginContext(37, 147, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0fb2e9e4e14948b49de945c30967ab71", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3e7c55390945422cb975c1fc40ef6627", async() => {
                 BeginContext(43, 134, true);
                 WriteLiteral("\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <title>无权限</title>\r\n");
                 EndContext();
@@ -81,7 +81,7 @@ using UniversityTutorManageSys.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(186, 589, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "040783422b6e4a1598334713cbf76cc7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6f1edf7ef76c4e6bac434bdbff02028d", async() => {
                 BeginContext(192, 576, true);
                 WriteLiteral(@"
     <h3>对不起，你没有权限！</h3>

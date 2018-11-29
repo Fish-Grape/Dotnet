@@ -40,7 +40,6 @@ F:\Fish-Store\DemoERP\UniversityTutorManageSys\bin\Debug\netcoreapp2.1\Universit
 F:\Fish-Store\DemoERP\UniversityTutorManageSys\bin\Debug\netcoreapp2.1\UniversityTutorManageSys.pdb
 F:\Fish-Store\DemoERP\UniversityTutorManageSys\bin\Debug\netcoreapp2.1\UniversityTutorManageSys.Views.dll
 F:\Fish-Store\DemoERP\UniversityTutorManageSys\bin\Debug\netcoreapp2.1\UniversityTutorManageSys.Views.pdb
-F:\Fish-Store\DemoERP\UniversityTutorManageSys\obj\Debug\netcoreapp2.1\UniversityTutorManageSys.csprojAssemblyReference.cache
 F:\Fish-Store\DemoERP\UniversityTutorManageSys\obj\Debug\netcoreapp2.1\UniversityTutorManageSys.csproj.CoreCompileInputs.cache
 F:\Fish-Store\DemoERP\UniversityTutorManageSys\obj\Debug\netcoreapp2.1\UniversityTutorManageSys.RazorAssemblyInfo.cache
 F:\Fish-Store\DemoERP\UniversityTutorManageSys\obj\Debug\netcoreapp2.1\UniversityTutorManageSys.RazorAssemblyInfo.cs
@@ -64,3 +63,9 @@ F:\Fish-Store\DemoERP\UniversityTutorManageSys\obj\Debug\netcoreapp2.1\Universit
 F:\Fish-Store\DemoERP\UniversityTutorManageSys\obj\Debug\netcoreapp2.1\UniversityTutorManageSys.dll
 F:\Fish-Store\DemoERP\UniversityTutorManageSys\obj\Debug\netcoreapp2.1\UniversityTutorManageSys.pdb
 F:\Fish-Store\DemoERP\UniversityTutorManageSys\obj\Debug\netcoreapp2.1\UniversityTutorManageSys.csproj.CopyComplete
+F:\Fish-Store\DemoERP\UniversityTutorManageSys\obj\Debug\netcoreapp2.1\Razor\Views\TaskwakeManage\Create.g.cshtml.cs
+F:\Fish-Store\DemoERP\UniversityTutorManageSys\obj\Debug\netcoreapp2.1\Razor\Views\TaskwakeManage\Delete.g.cshtml.cs
+F:\Fish-Store\DemoERP\UniversityTutorManageSys\obj\Debug\netcoreapp2.1\Razor\Views\TaskwakeManage\Details.g.cshtml.cs
+F:\Fish-Store\DemoERP\UniversityTutorManageSys\obj\Debug\netcoreapp2.1\Razor\Views\TaskwakeManage\Edit.g.cshtml.cs
+F:\Fish-Store\DemoERP\UniversityTutorManageSys\obj\Debug\netcoreapp2.1\Razor\Views\TaskwakeManage\TaskwakeDetail.g.cshtml.cs
+F:\Fish-Store\DemoERP\UniversityTutorManageSys\obj\Debug\netcoreapp2.1\UniversityTutorManageSys.csprojAssemblyReference.cache

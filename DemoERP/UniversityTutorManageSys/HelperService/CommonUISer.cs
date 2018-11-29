@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.Json;
 using Microsoft.Extensions.DependencyInjection;
@@ -62,16 +63,18 @@ namespace UniversityTutorManageSys.HelperService
         public void SaveUser(Myuser user,bool remember)
         {
             _helperSer.SetSession("login_code", user);
-            //用户标识
-            if (remember)
-                _helperSer.SaveCookie(CookieAuthenticationDefaults.AuthenticationScheme, user, 20);
-            else
-                _helperSer.SaveCookie(CookieAuthenticationDefaults.AuthenticationScheme, user, 0);
+            _helperSer.SaveCookie(CookieAuthenticationDefaults.AuthenticationScheme, user, 20);
         }
 
         public string WebSiteName()
         {
             return Config.GetAppSettings<ConfigPara>("WebSiteName").WebSiteName;
+        }
+
+        public void removeUser()
+        {
+            _helperSer.RemoveSession("login_code");
+            _helperSer.RemoveCookie(CookieAuthenticationDefaults.AuthenticationScheme);
         }
     }
 }

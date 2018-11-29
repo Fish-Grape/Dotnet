@@ -18,5 +18,7 @@ namespace UniversityTutorManageSys.Data
         }
 
         public DbSet<Myuser> Myusers { get; set; }
+
+        public DbSet<UniversityTutorManageSys.Models.MyTaskwake> MyTaskwake { get; set; }
     }
 }

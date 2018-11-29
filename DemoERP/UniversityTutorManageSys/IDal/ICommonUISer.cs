@@ -10,6 +10,7 @@ namespace UniversityTutorManageSys.IDal
     {
         String WebSiteName();
         Myuser getMyuser();
+        void removeUser();
         void SaveUser(Myuser user, bool remember = false);
     }
 }

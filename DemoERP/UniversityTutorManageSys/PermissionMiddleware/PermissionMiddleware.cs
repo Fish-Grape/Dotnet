@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using UniversityTutorManageSys.Extensions;
+using UniversityTutorManageSys.IDal;
 
 namespace UniversityTutorManageSys.PermissionMiddleware
 {
@@ -51,14 +53,12 @@ namespace UniversityTutorManageSys.PermissionMiddleware
 
             //是否经过验证
             bool isAuthenticated = context.User.Identity.IsAuthenticated;
-            if(isAuthenticated)
+            if (isAuthenticated)
             {
                 if(_userPermissions.GroupBy(g=>g.Url).Where(w=>w.Key.ToLower()==questUrl).Count()>0)
                 {
                     //用户名
-                    string userCode = context.Session.GetString("UserCode");
-                    if (string.IsNullOrEmpty(userCode))
-                        context.Request.Cookies.TryGetValue("UserCode", out userCode);
+                    string userCode =context.User.Claims.SingleOrDefault(s => s.Type == ClaimTypes.Sid).Value;
 
                     if(_userPermissions.Where(w=>w.UserCode== userCode && w.Url.ToLower()==questUrl).Count()>0)
                     {

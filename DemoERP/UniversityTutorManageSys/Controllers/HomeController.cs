@@ -102,15 +102,6 @@ namespace UniversityTutorManageSys.Controllers
         }
         #endregion
 
-        //#region 退出
-        //public ContentResult Quit()
-        //{
-        //    CommonUI.removeEmployee();
-        //    Response.Redirect("/login", false);
-        //    return Content("");
-        //}
-        //#endregion
-
         #region 登陆验证码
         [AllowAnonymous]
         public IActionResult doVerifyCode()
@@ -173,6 +164,15 @@ namespace UniversityTutorManageSys.Controllers
             return Json(result);
         }
 
+        #region 退出
+        [HttpGet("quit")]
+        public ContentResult Quit()
+        {
+            _commonUI.removeUser();
+            Response.Redirect("/login", false);
+            return Content("");
+        }
+        #endregion
         #endregion
 
         [HttpGet("denied")]

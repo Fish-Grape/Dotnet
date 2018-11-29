@@ -69,7 +69,11 @@ namespace UniversityTutorManageSys.HelperService
 
         public T GetSession<T>(string strSessionName)
         {
-            return MyHttpContext.Current.Session.GetObject<T>(strSessionName);
+            T t=MyHttpContext.Current.Session.GetObject<T>(strSessionName);
+            if (t == null)
+                return default(T);
+            else
+                return t;
         }
 
         public void SetSession<T>(string strSessionName, T d)
@@ -80,7 +84,7 @@ namespace UniversityTutorManageSys.HelperService
 
         public void RemoveCookie(string strCookeName)
         {
-            throw new NotImplementedException();
+            MyHttpContext.Current.SignOutAsync();
         }
 
         public void RemoveCookie(string strCookeName, string strDoMain)
@@ -90,7 +94,7 @@ namespace UniversityTutorManageSys.HelperService
 
         public void RemoveSession(string strSessionName)
         {
-            throw new NotImplementedException();
+            MyHttpContext.Current.Session.Remove(strSessionName);
         }
 
         public bool SaveCache(string strCacheName, object obj)
