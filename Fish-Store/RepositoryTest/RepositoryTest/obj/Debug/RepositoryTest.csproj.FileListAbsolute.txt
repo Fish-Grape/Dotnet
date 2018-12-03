@@ -1,6 +1,0 @@
-d:\documents\visual studio 2013\Projects\RepositoryTest\RepositoryTest\bin\Debug\RepositoryTest.exe.config
-d:\documents\visual studio 2013\Projects\RepositoryTest\RepositoryTest\obj\Debug\RepositoryTest.csprojResolveAssemblyReference.cache
-d:\documents\visual studio 2013\Projects\RepositoryTest\RepositoryTest\bin\Debug\RepositoryTest.exe
-d:\documents\visual studio 2013\Projects\RepositoryTest\RepositoryTest\bin\Debug\RepositoryTest.pdb
-d:\documents\visual studio 2013\Projects\RepositoryTest\RepositoryTest\obj\Debug\RepositoryTest.exe
-d:\documents\visual studio 2013\Projects\RepositoryTest\RepositoryTest\obj\Debug\RepositoryTest.pdb
