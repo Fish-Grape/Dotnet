@@ -1,0 +1,172 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@section head {
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $("#ul_id").hover(
+                    function () {
+                        $("#my-navbar").css("z-index", 0);
+                    },
+                    function () {
+                        $("#my-navbar").css("z-index", 999);
+                    })
+                $(window).scroll(function () {
+                    if ($(".navbar").offset().top > 50) {
+                        $(".navbar-fixed-top").addClass("top-nav");
+                    } else { $(".navbar-fixed-top").removeClass("top-nav"); }
+                })
+            })
+        })(jQuery);
+    </script>
+}
+<nav class="navbar navbar-fixed-top my-navbar" id="my-navbar" role="navigation">
+    <div class="head clearfix" id="index_head">
+        <div class="navbar menu fl" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="javascript:;" onclick="addTab('0','首页', '/');" class="navbar-brand" data-toggle="dropdown" type="button">
+                        首页
+                    </a>
+                </li>
+                @Html.Raw(ViewBag.Menu)
+            </ul>
+        </div>
+        <div class="sideInfo fr">
+            <div class="unapproved navbar rel clearfix">
+
+                <button class="btn btn-small pull-right" title="退出" type="button" onclick="location.href='quit'"><i class="ico ico_out"></i></button>
+                <button type="button" class="btn btn-small pull-right mr10" id="refresh" title="刷新"><i class="ico ico_refresh"></i></button>
+                <button type="button" class="btn btn-small pull-right mr10 " title="皮肤" class="dropdown-toggle" data-toggle="dropdown"><i class="ico ico_skin"></i></button>
+                @*<ul class="dropdown-menu skinDrop" aria-labelledby="">
+                    <li data-color="black" @(CommonUI.getEmployee.Skin == "black" ? "class=active" : "")><span class="black"></span> 典雅黑</li>
+                    <li data-color="green" @(CommonUI.getEmployee.Skin == "green" ? "class=active" : "")><span class="green"></span> 沉稳青</li>
+                    <li data-color="pink" @(CommonUI.getEmployee.Skin == "pink" ? "class=active" : "")><span class="pink"></span> 纯真粉</li>
+                    <li data-color="blue" @(CommonUI.getEmployee.Skin == "blue" ? "class=active" : "")><span class="blue"></span> 睿智蓝</li>
+                    <li data-color="purple" @(CommonUI.getEmployee.Skin == "purple" ? "class=active" : "")><span class="purple"></span> 优雅紫  </li>
+                    <li data-color="blue2" @(CommonUI.getEmployee.Skin == "blue2" ? "class=active" : "")><span class="blue2"></span> 青春蓝  </li>
+                </ul>*@
+            </div>
+            <div class="userInfo navbar clearfix">
+                @*<ul class="nav pull-right">
+                    <li id="fat-menu" class="dropdown">
+                        <a href="#" id="" role="button" class="dropdown-toggle" data-toggle="dropdown" type="button">
+                            <i class="ico ico_people-small"></i> <b title="工号：@(employeeModel.Num)">@(employeeModel.name)（工号：@(employeeModel.Num)）</b> <i class="ico ico_arrow-down"></i> 所属：<span title="@(employeeDeptModel.ParentDeptName)/@(employeeDeptModel.DeptName)">@(employeeDeptModel.ParentDeptName)/@(employeeDeptModel.DeptName)</span>
+                        </a>
+                        <ul id="dropdown-menu" class="dropdown-menu" aria-labelledby="">
+                            <li>
+                                @if (MyDeptModel.DistributionPointFig)
+                                {
+                                    <a href="javascript:;" name="deptinfo">查看资料</a>
+                                }
+                                <a href="javascript:;" name="pwd" data-id="@(employeeModel.id)" data-name="@(employeeModel.name) ">修改密码</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>*@
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="content">
+    <div class="page_tabs">
+        <div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+            <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" 
+                role="tablist" id="ul_id">
+                <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tabs-0" aria-labelledby="ui-id-1" aria-selected="true">
+                    <a href="#tabs-0" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">首页</a>
+                </li>
+            </ul>
+            <div id="tabs-0" class="tabs-0 ui-tabs-panel">
+                <div style="">
+
+
+                    @*<div class="index_daiban mt14">
+                            <div class="fz18 pr10">
+                                <span class="ver-t lh28">我的待办</span>
+                                <div class="toolbarNar ver-t index-toolbarNar clearfix ml20">
+                                    <a href="javascript:;" data-val="1" name="gddbbt" class="focus @(ViewBag.ListType == 1 ? "focus" : "")">全部待办</a>
+                                    <a href="javascript:;" data-val="2" name="gddbbt" class="@(ViewBag.ListType == 2 ? "focus" : "")">我申请的</a>
+                                    <a href="javascript:;" data-val="3" name="gddbbt" class="@(ViewBag.ListType == 3 ? "focus" : "")">我处理的</a>
+                                </div>
+                                <a class="blue fr mt5 fz15" href="javascript:;" onclick="addTab('HandlingList', '待办事宜', 'Handling/HandlingList')">更多>></a>
+                            </div>
+                            <div class="list">
+                                <table border="0" cellspacing="0" cellpadding="0" class="table_list table_list1  normal">
+                                    <tr>
+                                    </tr>
+                                    <tbody id="home_daibanlist">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>*@
+
+                    @*<div class="index-con clearfix mt25">
+                            <div class="left" style="width: 49%;height: 300px;">
+                                <div class="mt10 mb10 fz18">
+                                    通知信息
+                                    <div class="fr">
+                                        <a class="blue fz15" href="javascript:;" onclick="addTab('MessageList', '消息通知', 'Message/MessageList')">更多>></a>
+                                    </div>
+                                </div>
+                                <table border="0" cellspacing="0" cellpadding="0" class="table_list table_list1">
+                                    <tr><th>标题</th></tr>
+                                    <tbody id="home_messagelist"></tbody>
+                                </table>
+                            </div>
+                            <div class="right" style="width: 49%;height: 300px;">
+                                <div class="mt10 mb10 fz18">
+                                    资料归档
+                                    <div class="fr">
+                                        <a class="blue fz15" href="javascript:;" onclick="addTab('LoadAfterSaleList', '售后资料列表', 'LoanManage/LoadAfterSaleList')">更多>></a>
+                                    </div>
+                                </div>
+                                <table border="0" cellspacing="0" cellpadding="0" class="table_list table_list1">
+                                    <tr>
+                                        <th>编号</th>
+                                        <th>姓名</th>
+                                        <th>融资金额</th>
+                                        <th>放款日期</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    <tbody id="home_aftersaleinfolist"></tbody>
+                                </table>
+                            </div>
+                        </div>*@
+                </div>
+                <form id="frm">
+                    <button type="submit" class="btn btn-yellow hide">@*刷新*@</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg"></div>
+
+<br /><br /><br /><br /><br /><br /><br />
+<div class="copyright">
+    <p>&copy; 2018 - UniversityTutorManageSys </p>
+</div>
+
+
+<script type="text/javascript" src="~/js/jquery.validate.js"></script>
+<script type="text/javascript" src="~/js/validate.js?v=99877763412"></script>
+<link rel="stylesheet" type="text/css" href="~/css/zTreeStyle/zTreeStyle.css" />
+<script type="text/javascript" src="~/js/jquery.ztree.core.min.js"></script>
+<script type="text/javascript" src="~/js/jquery.ztree.excheck.min.js"></script>
+<script type="text/javascript" src="~/js/jquery.ztree.exedit.min.js"></script>
+<script src="~/js/dmuploader.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="~/js/viewer/viewer.js?v=19882"></script>
+<!--环形 贷前报告用-->
+<script type="text/javascript" src="~/js/raphael.js?v=@(DateTime.Now)"></script>
+<script type="text/javascript" src="~/js/svgCircle.js?v=@(DateTime.Now)" charset="utf-8"></script>
+<script src="~/js/index.js?v=323218" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="~/js/jwplayer/jwplayer.js?v=@(DateTime.Now)"></script>
+@*加载打印控件*@
+<script type="text/javascript" src="/js/LodopFuncs.js?v=@(DateTime.Now)"></script>
+<script type="text/javascript" charset="utf-8" src="~/ueditor/ueditor.config.js?v=@(DateTime.Now)"></script>
+<script type="text/javascript" charset="utf-8" src="~/ueditor/ueditor.all.js?v=@(DateTime.Now)"></script>
+<script type="text/javascript" charset="utf-8" src="~/ueditor/lang/zh-cn/zh-cn.js?v=@(DateTime.Now)"></script>
+<link rel="stylesheet" type="text/css" href="~/ProjResource/css/Home/Index.css">

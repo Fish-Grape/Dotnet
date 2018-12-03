@@ -1,0 +1,87 @@
+﻿@{ 
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/images/favicon.ico" media="screen" />
+    <link rel="stylesheet" type="text/css" href="~/css/jquery-ui-1.10.0.custom.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap-modal.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/common.css?V=201801242114" />
+    <link rel="stylesheet" type="text/css" href="~/css/ico.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/login.css?v=192887374" />
+    <script src="~/js/jquery-1.8.2.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/bootstrap-modalmanager.js"></script>
+    <script src="~/js/bootstrap-modal.js"></script>
+    <script src="~/js/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="~/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="~/js/validate.js"></script>
+    <script type="text/javascript" src="~/js/common.js"></script>
+    @*@if (File.Exists(CommonUISer.Config.UploadImagePath + "login_bg.jpg"))
+    {
+        <style type="text/css">
+            body, html {
+                background-image:url('@(CommonUISer.Config.UploadImagePath + "login_bg.jpg")')
+            }
+        </style>
+    }*@
+    <script type="text/javascript" src="~/ProjResource/js/Home/Login.js" ></script>
+</head>
+<body>
+    <form id="frm_login" method="post">
+        <div class="login_head">
+            <div class="login_logo">
+                @*@if (File.Exists(CommonUISer.Config.UploadImagePath + "login_bg.jpg"))
+        {
+            <img src='@(CommonUISer.Config.UploadImagePath + "login_bg.jpg")' />
+        }
+        else
+        {*@
+                <img src="~/images/Login/logo_cd.png" />
+                @* } *@
+            </div>
+        </div>
+        <div class="login_box">
+            <h3>登录系统</h3>
+            <div class="input clearfix">
+                <span class="s1">
+                    <i class="ico ico_people"></i>
+                </span>
+                <input type="text" name="UserCode" id="usr" placeholder="请输入用户名" autocomplete="off" />
+            </div>
+            <div class="input clearfix">
+                <span class="s1" id="spanPwd">
+                    <i class="ico ico_lock"></i>
+                </span>
+                <span id="pwdbox">
+                    <input type="Password" name="UserPassword" id="pwd" placeholder="请输入密码" />
+                </span>
+                <div class="eyes">
+                    <i class="ico ico_eye-open" onclick="ShowHideEyes()"></i>
+                </div>
+            </div>
+            <div class="input clearfix" id="codeAera">
+                <span class="s1">
+                    <i class="ico ico_code"></i>
+                </span>
+                <input type="text" name="Verifycode" id="code" class="fl" placeholder="请输入验证码" maxlength="4" autocomplete="off" />
+                <span class="codeImg">
+                    <img title="点击刷新" src="home/doverifycode" id="codeimg" />
+                </span>
+            </div>
+            <div id="errorinfo" class="hide clearfix fl wmax mt10">
+                <i class="ico ico_exclamation">&nbsp;</i>
+                <span class="orange">请输入正确的用户名</span>
+            </div>
+            <div class="pt20 clearfix fl wmax">
+                <button class="btn btn-large btn-block btn-orange " id="submit" type="submit">登 录</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

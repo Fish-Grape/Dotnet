@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IDal</name>
+    </assembly>
+    <members>
+        <member name="M:IDal.Common.IGetHelperSer.AESEncrypt(System.String,System.String)">
+            <summary>
+            加密AES
+            </summary>
+            <param name="input"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.IGetHelperSer.AESDecrypt(System.String,System.String)">
+            <summary>
+            解密AES
+            </summary>
+            <param name="input"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.IVerifyCodeSer.RndNum(System.Int32)">
+            <summary>  
+            该方法用于生成指定位数的随机数  
+            </summary>  
+            <param name="VcodeNum">参数是随机数的位数</param>  
+            <returns>返回一个随机数字符串</returns>  
+        </member>
+        <member name="M:IDal.Common.IVerifyCodeSer.Create(System.String@,System.Int32)">
+            <summary>  
+            该方法是将生成的随机数写入图像文件  
+            </summary>  
+            <param name="code">code是一个随机数</param>
+            <param name="numbers">生成位数（默认4位）</param>  
+        </member>
+        <!-- 对于成员“M:IDal.System.IMenuSer.GetMenuViewByGUID(System.Guid)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:IDal.System.IMenuSer.GetMenuList”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:IDal.System.IMenuSer.GetMenuListByRightGUID(System.Guid)”忽略有格式错误的 XML 注释 -->
+        <member name="M:IDal.System.IMenuSer.GetMenuListByUserGUID(System.Guid)">
+            <summary>
+            根据员工Id获得菜单
+            </summary>
+            <param name="UserGUID">用户Id</param>
+        </member>
+        <member name="M:IDal.System.IMenuSer.Insert(Model.System.MenuModel)">
+            <summary>
+            新增菜单
+            </summary>
+            <param name="moMenuModel">菜单属性</param>
+            <returns>存储过程返回参数</returns>
+        </member>
+        <member name="M:IDal.System.IMenuSer.Change(Model.System.MenuModel)">
+            <summary>
+            修改菜单
+            </summary>
+            <param name="moMenuModel">系统菜单属性</param>
+            <returns>存储过程返回参数</returns>
+        </member>
+        <member name="M:IDal.System.IMenuSer.Delete(System.Guid)">
+            <summary>
+            修改菜单
+            </summary>
+            <param name="MenuId">菜单ID</param>
+            <returns>存储过程返回参数</returns>
+        </member>
+        <member name="M:IDal.User.IMyuserBllSer.Login(System.String,System.String,Model.User.Myuser)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="usr">用户名</param>
+            <param name="pwd">密码</param>
+            <param name="DoMain">域名或端口</param>
+            <returns>会员资料实体</returns>
+        </member>
+        <member name="M:IDal.User.IMyuserBllSer.ModifyPassword(System.Guid,System.String,System.String)">
+            <summary>
+            修改密码
+            </summary>
+            <param name="id"></param>
+            <param name="pwd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.User.IMyuserBllSer.ResetPassword(System.Guid,System.String)">
+            <summary>
+            重置密码
+            </summary>
+            <param name="Id">用户id</param>
+            <param name="Pwd">密码</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.User.IMyuserBllSer.ActivateUser(System.Guid)">
+            <summary>
+            启用停用
+            </summary>
+            <param name="Id">用户ID</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
