@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <div class="col-md-3">
+        <h2>Run &amp; Deploy</h2>
+        <ul>
+            <li>ViewBag.Cache: @ViewBag.Cache</li>
+
+            @foreach (KeyValuePair<string, object> dic in ViewBag.keys)
+            {
+            <li><h1>@(dic.Key + ":" + dic.Value)</h1> </li>
+            }
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+﻿{
+  "CacheProvider": {
+    "IsUseRedis": "true",
+    "ConnectionString": "127.0.0.1:6379",
+    "InstanceName": "redis_cache"
+  }
+}
