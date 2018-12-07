@@ -17,7 +17,7 @@
       <HintPath>lib\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
-      <HintPath>lib\log4net.dll</HintPath>
+      <HintPath>..\..\DemoERP\Code\HelperService\lib\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Memcached.ClientLibrary">
       <HintPath>lib\Memcached.ClientLibrary.dll</HintPath>

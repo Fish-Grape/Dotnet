@@ -1065,17 +1065,16 @@ IF EXISTS
 (
     SELECT *
     FROM dbo.sysobjects
-    WHERE id = OBJECT_ID(N'[dbo].[Sp_UserRight]')
+    WHERE id = OBJECT_ID(N'[dbo].[Sp_User]')
           AND OBJECTPROPERTY(id, N'IsProcedure') = 1
 )
-    DROP PROCEDURE Sp_UserRight;
+    DROP PROCEDURE Sp_User;
 GO
 
-
-CREATE PROC Sp_UserRight
+CREATE PROC Sp_User
     @Options VARCHAR(100),
-    @UserGUID UNIQUEIDENTIFIER=NULL,
-    @UserCode VARCHAR(50)=NULL
+    @UserGUID UNIQUEIDENTIFIER = NULL,
+    @UserCode VARCHAR(50) = NULL
 AS
 BEGIN
 
@@ -1091,6 +1090,24 @@ BEGIN
             INNER JOIN dbo.SystemMenu
                 ON SystemMenu.SystemMenuGUID = RM.SystemMenuGUID
         WHERE NavigateUrl <> '';
+    END;
+    IF @Options = 'GetUserByUserCode'
+    BEGIN
+        SELECT [UserGUID],
+               [IsAdmin],
+               [UserCode],
+               [UserPassword],
+               [Verifycode],
+               [ClassGUID],
+               [UserName],
+               [Sex],
+               [Birthday],
+               [UserNo],
+               [Hobby],
+               [IsForbidden],
+               [Remember]
+        FROM [dbo].[Myuser]
+        WHERE UserCode = @UserCode;
     END;
 END;
 GO

@@ -1,0 +1,14 @@
+F:\Fish-Store\DemoERP\Code\Aop\bin\Debug\netcoreapp2.1\Aop.deps.json
+F:\Fish-Store\DemoERP\Code\Aop\bin\Debug\netcoreapp2.1\Aop.dll
+F:\Fish-Store\DemoERP\Code\Aop\bin\Debug\netcoreapp2.1\Aop.pdb
+F:\Fish-Store\DemoERP\Code\Web\bin\netcoreapp2.1\Aop.deps.json
+F:\Fish-Store\DemoERP\Code\Web\bin\netcoreapp2.1\Aop.dll
+F:\Fish-Store\DemoERP\Code\Web\bin\netcoreapp2.1\Aop.pdb
+F:\Fish-Store\DemoERP\Code\Web\bin\netcoreapp2.1\Aop.xml
+F:\Fish-Store\DemoERP\Code\Aop\obj\Debug\netcoreapp2.1\Aop.csprojAssemblyReference.cache
+F:\Fish-Store\DemoERP\Code\Aop\obj\Debug\netcoreapp2.1\Aop.csproj.CoreCompileInputs.cache
+F:\Fish-Store\DemoERP\Code\Aop\obj\Debug\netcoreapp2.1\Aop.AssemblyInfoInputs.cache
+F:\Fish-Store\DemoERP\Code\Aop\obj\Debug\netcoreapp2.1\Aop.AssemblyInfo.cs
+F:\Fish-Store\DemoERP\Code\Aop\obj\Debug\netcoreapp2.1\Aop.csproj.CopyComplete
+F:\Fish-Store\DemoERP\Code\Aop\obj\Debug\netcoreapp2.1\Aop.dll
+F:\Fish-Store\DemoERP\Code\Aop\obj\Debug\netcoreapp2.1\Aop.pdb

@@ -1,4 +1,5 @@
 ﻿using Extensions.PermissionMiddleware;
+using IDal.Aop.ILog;
 using IDal.Common;
 using IDal.User;
 using System;
@@ -8,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace SqlServerDal.User
 {
-    public class UserRightSer : IUserRightSer
+    public class UserRightSer : IUserRightSer,ILogging
     {
         public ISqlHelperSer _sqlHelper;
 
@@ -16,14 +17,13 @@ namespace SqlServerDal.User
         {
             _sqlHelper = sqlHelper;
         }
-
         public IList<UserPermission> GetAllUserRight()
         {
             SqlParameter[] parameters = {
                 new SqlParameter("@Options",SqlDbType.VarChar)
             };
             parameters[0].Value = "GetAllUserRight";
-            return _sqlHelper.ExecuteToList<UserPermission>("Sp_UserRight", parameters);
+            return _sqlHelper.ExecuteToList<UserPermission>("Sp_User", parameters);
         }
 
         public IList<UserPermission> GetUserRightByUserCode(string code)

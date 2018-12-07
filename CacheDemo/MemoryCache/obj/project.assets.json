@@ -932,11 +932,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Fish-Store\\MemberCaching\\MemoryCache\\MemoryCache.csproj",
+      "projectUniqueName": "F:\\Fish-Store\\CacheDemo\\MemoryCache\\MemoryCache.csproj",
       "projectName": "MemoryCache",
-      "projectPath": "F:\\Fish-Store\\MemberCaching\\MemoryCache\\MemoryCache.csproj",
+      "projectPath": "F:\\Fish-Store\\CacheDemo\\MemoryCache\\MemoryCache.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "F:\\Fish-Store\\MemberCaching\\MemoryCache\\obj\\",
+      "outputPath": "F:\\Fish-Store\\CacheDemo\\MemoryCache\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -8518,10 +8518,11 @@
       ]
     },
     "System.Diagnostics.FileVersionInfo/4.3.0": {
-      "sha512": "omCF64wzQ3Q2CeIqkD6lmmxeMZtGHUmzgFMPjfVaOsyqpR66p/JaZzManMw1s33osoAb5gqpncsjie67+yUPHQ==",
+      "sha512": "OEshwk5wkdxtGkFZYSErv6dnUuz0z8C01htylGwOwFnCVFRcrvleBtplMDCk9nMyWP41cbMZGEIBfy7HV1Loug==",
       "type": "package",
       "path": "system.diagnostics.fileversioninfo/4.3.0",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -8558,10 +8559,11 @@
       ]
     },
     "System.Diagnostics.StackTrace/4.3.0": {
-      "sha512": "BiHg0vgtd35/DM9jvtaC1eKRpWZxr0gcQd643ABG7GnvSlf5pOkY2uyd42mMOJoOmKvnpNj0F4tuoS1pacTwYw==",
+      "sha512": "BZY9Q0RiOSp/hp13jXe97aVOgPDzlqOdYdixs5fl/e3K/vz1SoJYDddY8CPE3wH9m043tJ65L8i+WMiPzGxdtQ==",
       "type": "package",
       "path": "system.diagnostics.stacktrace/4.3.0",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -11784,10 +11786,11 @@
       ]
     },
     "System.Threading.Tasks.Parallel/4.3.0": {
-      "sha512": "cbjBNZHf/vQCfcdhzx7knsiygoCKgxL8mZOeocXZn5gWhCdzHIq6bYNKWX0LAJCWYP7bds4yBK8p06YkP0oa0g==",
+      "sha512": "Wn3GV5YIWjxvv9muD9FSZxH4PLx98Y4D1Z5mpYTowK1RLPtFvusnVKnT0OzmzEpYCMtVNgqfk3kPc9xRGsWrLA==",
       "type": "package",
       "path": "system.threading.tasks.parallel/4.3.0",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -11877,10 +11880,11 @@
       ]
     },
     "System.ValueTuple/4.3.0": {
-      "sha512": "cNLEvBX3d6MMQRZe3SMFNukVbitDAEpVZO17qa0/2FHxZ7Y7PpFRpr6m2615XYM/tYYYf0B+WyHNujqIw8Luwg==",
+      "sha512": "HiwjNp4lGpyqFXPbWe/GUV3VDn4URlp85xNinOXT+lXQCeJAVdtPm70kH/9PmjbhJjdF1zpPm3obvrT4defjCA==",
       "type": "package",
       "path": "system.valuetuple/4.3.0",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/.xml",
@@ -12136,10 +12140,11 @@
       ]
     },
     "System.Xml.XPath/4.3.0": {
-      "sha512": "v1JQ5SETnQusqmS3RwStF7vwQ3L02imIzl++sewmt23VGygix04pEH+FCj1yWb+z4GDzKiljr1W7Wfvrx0YwgA==",
+      "sha512": "8Eo7vuasWRqXfiBRCIKz20Rq1h6n+NMp6nW2RmyUwF4VDekg8xbRZu8S3N21P5XGAhv+kaqUwI3xydEkcw+D5w==",
       "type": "package",
       "path": "system.xml.xpath/4.3.0",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12173,10 +12178,11 @@
       ]
     },
     "System.Xml.XPath.XDocument/4.3.0": {
-      "sha512": "jw9oHHEIVW53mHY9PgrQa98Xo2IZ0ZjrpdOTmtvk+Rvg4tq7dydmxdNqUvJ5YwjDqhn75mBXWttWjiKhWP53LQ==",
+      "sha512": "I50WmmXa9mUUujJOWKjyjqMnZcJklN5oc6XfHk5bfp9gt6eCJQ74qmi7IYEMa2YHPoFuA93uwssBlfU51i53QA==",
       "type": "package",
       "path": "system.xml.xpath.xdocument/4.3.0",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12226,11 +12232,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\EFCore_Demo\\EFCore_Demo\\EFCore_Demo.csproj",
+      "projectUniqueName": "F:\\Fish-Store\\EFCore_Demo\\EFCore_Demo\\EFCore_Demo.csproj",
       "projectName": "EFCore_Demo",
-      "projectPath": "C:\\Users\\Administrator\\source\\repos\\EFCore_Demo\\EFCore_Demo\\EFCore_Demo.csproj",
+      "projectPath": "F:\\Fish-Store\\EFCore_Demo\\EFCore_Demo\\EFCore_Demo.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\source\\repos\\EFCore_Demo\\EFCore_Demo\\obj\\",
+      "outputPath": "F:\\Fish-Store\\EFCore_Demo\\EFCore_Demo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"

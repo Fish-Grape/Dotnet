@@ -1,26 +1,31 @@
 ﻿using IDal.Common;
 using IDal.User;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 using Model;
 using Model.User;
 using System;
 using System.Threading.Tasks;
+using IDal.Aop;
+using DataContext.Log;
+using DataContext.Cache;
+using System.Data.SqlClient;
+using System.Data;
+using IDal.Aop.ILog;
 using DataContext;
+using Microsoft.EntityFrameworkCore;
 
 namespace SqlServerDal.User
 {
-    public class MyuserBllSer : IMyuserBllSer
+    public class MyuserBllSer : IMyuserBllSer, ILogging
     {
-        public MyDataContext _dbContext;
+        public ISqlHelperSer _sqlHelper;
         public IGetHelperSer _getHelper;
-        private readonly ILogger<MyuserBllSer> _logger;
+        public MyDataContext _dbContext;
 
-        public MyuserBllSer(MyDataContext dbContext, IGetHelperSer getHelper, ILogger<MyuserBllSer> logger)
+        public MyuserBllSer(ISqlHelperSer sqlHelper, IGetHelperSer getHelper, MyDataContext dbContext)
         {
-            _dbContext = dbContext;
+            _sqlHelper = sqlHelper;
             _getHelper = getHelper;
-            _logger = logger;
+            _dbContext = dbContext;
         }
 
         public Task<ResultModel> ActivateUser(Guid UserGUID)
@@ -28,39 +33,41 @@ namespace SqlServerDal.User
             throw new NotImplementedException();
         }
 
-        public async Task<ResultModel> Login(string UserCode, string Password,Myuser myuser)
+        [Logging(CheckException =true)]
+        public async Task<ResultModel> Login(string UserCode, string Password, Myuser myuser)
         {
             ResultModel result = new ResultModel();
+            Myuser user = null;
             try
             {
-                var user = await _dbContext.Myusers
+                user = await _dbContext.Myusers
                 .FirstOrDefaultAsync(m => m.UserCode == UserCode);
-                if (user == null || user.UserGUID == Guid.Empty)
-                {
-                    result.State = 1;
-                    result.Message = "该用户不存在!";
-                }
-                else if (user.IsForbidden == 1)
-                {
-                    result.State = 1;
-                    result.Message = "该用户已被停用，请与管理员联系!";
-                }
-                else if (Password != _getHelper.AESDecrypt(user.UserPassword, user.UserGUID.ToString("N")))
-                {
-                    result.State = 1;
-                    result.Message = "密码错误!";
-                }
-                else
-                {
-                    result.State = 0;
-                    result.Message = "登录成功!";
-                    myuser.UserGUID = user.UserGUID;
-                    myuser.UserName = user.UserName;
-                }
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
-                _logger.LogError(ex.Message);
+                throw ex;
+            }
+            if (user == null || user.UserGUID == Guid.Empty)
+            {
+                result.State = 1;
+                result.Message = "该用户不存在!";
+            }
+            else if (user.IsForbidden == 1)
+            {
+                result.State = 1;
+                result.Message = "该用户已被停用，请与管理员联系!";
+            }
+            else if (Password != _getHelper.AESDecrypt(user.UserPassword, user.UserGUID.ToString("N")))
+            {
+                result.State = 1;
+                result.Message = "密码错误!";
+            }
+            else
+            {
+                result.State = 0;
+                result.Message = "登录成功!";
+                myuser.UserGUID = user.UserGUID;
+                myuser.UserName = user.UserName;
             }
             return result;
         }
@@ -73,6 +80,17 @@ namespace SqlServerDal.User
         public Task<ResultModel> ResetPassword(Guid UserGUID, string Password)
         {
             throw new NotImplementedException();
+        }
+
+        public Myuser GetUserByUserCode(string UserCode)
+        {
+            SqlParameter[] parameters = {
+                new SqlParameter("@Options",SqlDbType.VarChar),
+                new SqlParameter("@UserCode",SqlDbType.VarChar),
+            };
+            parameters[0].Value = "GetUserByUserCode";
+            parameters[1].Value = UserCode;
+            return _sqlHelper.ExecuteToModel<Myuser>("Sp_User", parameters);
         }
     }
 }

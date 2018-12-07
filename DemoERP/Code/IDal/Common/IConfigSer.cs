@@ -9,7 +9,12 @@ namespace IDal.Common
         string WebSiteName { get; }
         string UploadFilePath { get;}
         string UploadImagePath { get; }
-        string ConnectionStrings { get; }
+        string SQLConnectionStrings { get; }
+        string PoolName { get; }
+        string ServerList { get; }
+        string IsUseRedis { get; }
+        string RedisConnectionString { get; }
+        string InstanceName { get; }
         T GetAppSettings<T>(string key) where T : class, new();
     }
 }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Model.Config
+﻿namespace Model.Config
 {
     public class ConfigPara
     {
@@ -11,5 +6,10 @@ namespace Model.Config
         public string DefaultConnection { get; set; }
         public string UploadFilePath { get; set; }
         public string UploadImagePath { get; set; }
+        public string PoolName { get; set; }
+        public string ServerList { get; set; }
+        public string IsUseRedis { get; set; }
+        public string ConnectionString { get; set; }
+        public string InstanceName { get; set; }
     }
 }

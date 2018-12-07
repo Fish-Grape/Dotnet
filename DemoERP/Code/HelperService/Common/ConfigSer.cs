@@ -13,7 +13,12 @@ namespace HelperService.Common
         public string WebSiteName => GetAppSettings<ConfigPara>("WebSiteName").WebSiteName;
         public string UploadFilePath => GetAppSettings<ConfigPara>("UpFilesPath").UploadFilePath;
         public string UploadImagePath => GetAppSettings<ConfigPara>("UpFilesPath").UploadImagePath;
-        public string ConnectionStrings => GetAppSettings<ConfigPara>("ConnectionStrings").DefaultConnection;
+        public string SQLConnectionStrings => GetAppSettings<ConfigPara>("ConnectionStrings").DefaultConnection;
+        public string PoolName => GetAppSettings<ConfigPara>("ServerList").PoolName;
+        public string ServerList => GetAppSettings<ConfigPara>("ServerList").ServerList;
+        public string IsUseRedis => GetAppSettings<ConfigPara>("CacheProvider").IsUseRedis;
+        public string RedisConnectionString => GetAppSettings<ConfigPara>("CacheProvider").ConnectionString;
+        public string InstanceName => GetAppSettings<ConfigPara>("CacheProvider").InstanceName;
         #endregion
 
         public T GetAppSettings<T>(string key) where T : class, new()

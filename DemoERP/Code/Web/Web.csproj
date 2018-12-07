@@ -15,15 +15,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="lib\**" />
     <Compile Remove="wwwroot\ueditor\net\**" />
+    <Content Remove="lib\**" />
     <Content Remove="wwwroot\ueditor\net\**" />
+    <EmbeddedResource Remove="lib\**" />
     <EmbeddedResource Remove="wwwroot\ueditor\net\**" />
+    <None Remove="lib\**" />
     <None Remove="wwwroot\ueditor\net\**" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.8.1" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.3.1" />
+    <PackageReference Include="Autofac.Extras.DynamicProxy" Version="4.5.0" />
+    <PackageReference Include="Castle.Core" Version="4.3.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />

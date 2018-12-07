@@ -130,7 +130,6 @@ namespace Web.Controllers
                     return Json(result);
                 }
             }
-
             result = MyuserBll.Login(myuser.UserCode, myuser.UserPassword,myuser).Result;
             if (result.State==1)
             {

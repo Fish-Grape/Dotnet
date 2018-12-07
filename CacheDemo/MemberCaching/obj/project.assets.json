@@ -11987,11 +11987,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Fish-Store\\MemberCaching\\MemberCaching\\MemberCaching.csproj",
+      "projectUniqueName": "F:\\Fish-Store\\CacheDemo\\MemberCaching\\MemberCaching.csproj",
       "projectName": "MemberCaching",
-      "projectPath": "F:\\Fish-Store\\MemberCaching\\MemberCaching\\MemberCaching.csproj",
+      "projectPath": "F:\\Fish-Store\\CacheDemo\\MemberCaching\\MemberCaching.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "F:\\Fish-Store\\MemberCaching\\MemberCaching\\obj\\",
+      "outputPath": "F:\\Fish-Store\\CacheDemo\\MemberCaching\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"

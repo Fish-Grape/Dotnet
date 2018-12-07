@@ -1,22 +1,23 @@
-﻿using IDal.Common;
+﻿using IDal.Aop.ILog;
+using IDal.Common;
 using IDal.System;
 using Model.System;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace SqlServerDal.System
 {
-    public class MenuSer : IMenuSer
+    public class MenuSer : IMenuSer, ILogging
     {
         public ISqlHelperSer _sqlHelper;
+        public IGetHelperSer _getHelper;
 
-        public MenuSer(ISqlHelperSer sqlHelper)
+        public MenuSer(ISqlHelperSer sqlHelper, IGetHelperSer getHelper)
         {
             _sqlHelper = sqlHelper;
+            _getHelper = getHelper;
         }
 
         public int Change(MenuModel moMenuModel)
@@ -47,7 +48,8 @@ namespace SqlServerDal.System
             };
             parameters[0].Value = "GetMenuListByUserGUID";
             parameters[1].Value = UserGUID;
-            return _sqlHelper.ExecuteToList<MenuModel>("SpMenu", parameters);
+            string result=_sqlHelper.ExecuteToString("SpMenu", parameters);
+            return _getHelper.ConvertToList<MenuModel>(result);
         }
 
         public MenuModel GetMenuViewByGUID(Guid GUID)

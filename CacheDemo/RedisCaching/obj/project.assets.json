@@ -11985,11 +11985,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Fish-Store\\MemberCaching\\RedisCaching\\RedisCaching.csproj",
+      "projectUniqueName": "F:\\Fish-Store\\CacheDemo\\RedisCaching\\RedisCaching.csproj",
       "projectName": "RedisCaching",
-      "projectPath": "F:\\Fish-Store\\MemberCaching\\RedisCaching\\RedisCaching.csproj",
+      "projectPath": "F:\\Fish-Store\\CacheDemo\\RedisCaching\\RedisCaching.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "F:\\Fish-Store\\MemberCaching\\RedisCaching\\obj\\",
+      "outputPath": "F:\\Fish-Store\\CacheDemo\\RedisCaching\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"

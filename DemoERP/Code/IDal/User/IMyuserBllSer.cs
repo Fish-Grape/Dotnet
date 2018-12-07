@@ -16,6 +16,12 @@ namespace IDal.User
         /// <returns>会员资料实体</returns>
         Task<ResultModel> Login(string UserCode,string Password,Myuser user);
         /// <summary>
+        /// 根据用户名获取用户
+        /// </summary>
+        /// <param name="UserCode"></param>
+        /// <returns></returns>
+        Myuser GetUserByUserCode(string UserCode);
+        /// <summary>
         /// 修改密码
         /// </summary>
         /// <param name="id"></param>

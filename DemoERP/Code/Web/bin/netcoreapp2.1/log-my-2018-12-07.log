@@ -1,0 +1,77 @@
+2018-12-07 14:38:43.0241|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|你正在调用方法 "GetMenuListByUserGUID"  参数是 System.String[]... 
+2018-12-07 14:38:43.7971|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|[Begin]========================出现异常，请及时处理!===================================== 
+2018-12-07 14:38:46.1081|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|找不到存储过程 'SpMen'。 
+2018-12-07 14:38:46.5481|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|[End]========================出现异常，请及时处理!======================================= 
+2018-12-07 14:38:47.0081|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|方法执行完毕，返回结果： 
+2018-12-07 14:38:47.4781|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:38:47.6881|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:38:47.8911|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:43:28.1471|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|你正在调用方法 "GetMenuListByUserGUID"  参数是 System.String[]... 
+2018-12-07 14:43:28.1681|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|[Begin]========================出现异常，请及时处理!===================================== 
+2018-12-07 14:43:28.1791|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|找不到存储过程 'SpMen'。 
+2018-12-07 14:43:28.2001|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|[End]========================出现异常，请及时处理!======================================= 
+2018-12-07 14:43:28.2001|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|方法执行完毕，返回结果： 
+2018-12-07 14:43:28.2001|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:43:28.2001|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:43:28.2001|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:46:37.3101|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|你正在调用方法 "GetMenuListByUserGUID"  参数是 System.String[]... 
+2018-12-07 14:46:37.3371|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|[Begin]========================出现异常，请及时处理!===================================== 
+2018-12-07 14:46:37.3531|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|找不到存储过程 'SpMen'。 
+2018-12-07 14:46:37.3671|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|[End]========================出现异常，请及时处理!======================================= 
+2018-12-07 14:46:37.3671|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|方法执行完毕，返回结果： 
+2018-12-07 14:46:37.3671|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:46:37.3671|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:46:37.3671|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:46:54.7361|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|你正在调用方法 "GetMenuListByUserGUID"  参数是 System.String[]... 
+2018-12-07 14:46:54.7611|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|[Begin]========================出现异常，请及时处理!===================================== 
+2018-12-07 14:46:54.7611|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|找不到存储过程 'SpMen'。 
+2018-12-07 14:46:54.7611|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|[End]========================出现异常，请及时处理!======================================= 
+2018-12-07 14:46:54.7611|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|方法执行完毕，返回结果： 
+2018-12-07 14:46:54.7611|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:46:54.7611|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:46:54.7781|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:47:01.6501|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|你正在调用方法 "GetMenuListByUserGUID"  参数是 System.String[]... 
+2018-12-07 14:47:01.6501|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|[Begin]========================出现异常，请及时处理!===================================== 
+2018-12-07 14:47:01.6501|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|找不到存储过程 'SpMen'。 
+2018-12-07 14:47:01.6601|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|[End]========================出现异常，请及时处理!======================================= 
+2018-12-07 14:47:01.6601|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|方法执行完毕，返回结果： 
+2018-12-07 14:47:01.6601|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:47:01.6601|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:47:01.6601|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:47:05.1361|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|你正在调用方法 "GetMenuListByUserGUID"  参数是 System.String[]... 
+2018-12-07 14:47:05.1361|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|[Begin]========================出现异常，请及时处理!===================================== 
+2018-12-07 14:47:05.1361|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|找不到存储过程 'SpMen'。 
+2018-12-07 14:47:05.1361|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|[End]========================出现异常，请及时处理!======================================= 
+2018-12-07 14:47:05.1361|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|方法执行完毕，返回结果： 
+2018-12-07 14:47:05.1361|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:47:05.1361|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:47:05.1511|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:47:33.3771|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|你正在调用方法 "GetMenuListByUserGUID"  参数是 System.String[]... 
+2018-12-07 14:47:33.4011|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|[Begin]========================出现异常，请及时处理!===================================== 
+2018-12-07 14:47:33.4011|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|找不到存储过程 'SpMen'。 
+2018-12-07 14:47:33.4011|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|[End]========================出现异常，请及时处理!======================================= 
+2018-12-07 14:47:33.4031|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|方法执行完毕，返回结果： 
+2018-12-07 14:47:33.4031|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:47:33.4031|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 
+2018-12-07 14:47:33.4031|HelperService.Aop.Log.LoggingInterceptorSer|ERROR|
+ 

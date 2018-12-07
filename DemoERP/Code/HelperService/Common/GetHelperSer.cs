@@ -12,16 +12,27 @@ using Extensions.SessionExtensions;
 using Model.User;
 using System.Threading;
 using NLog;
+using Microsoft.Extensions.Caching.Memory;
+using System.Collections.Generic;
+using System.Reflection;
 
 namespace HelperService.Common
 {
     public class GetHelperSer : IGetHelperSer
     {
         private static Logger _logger;
+
+        public IMemoryCache _memoryCache;
+
+        public GetHelperSer(IMemoryCache memoryCache)
+        {
+            _memoryCache = memoryCache;
+        }
+
         /// <summary>
         /// 获取单例Logger
         /// </summary>
-        public static Logger SingletonLogger
+        public Logger SingletonLogger
         {
             get
             {
@@ -31,6 +42,21 @@ namespace HelperService.Common
             }
         }
 
+        /// <summary>
+        /// DataSetToList
+        /// </summary>
+        /// <typeparam name="T">转换类型</typeparam>
+        /// <param name="DataTable">数据源</param>
+        /// <returns></returns>
+        public IList<T> ConvertToList<T>(string jsonString) 
+        {
+            //确认参数有效
+            if (string.IsNullOrEmpty(jsonString))
+                return null;
+            return JsonConvert.DeserializeObject<IList<T>>(jsonString);
+        }
+
+
         public T GetApplication<T>(string strApplicationName, T d)
         {
             throw new NotImplementedException();
@@ -38,6 +64,10 @@ namespace HelperService.Common
 
         public T GetCache<T>(string strCacheName, T d)
         {
+            if (_memoryCache.TryGetValue(strCacheName, out d))
+                return d;
+            else
+                return default(T);
             throw new NotImplementedException();
         }
 
@@ -54,7 +84,8 @@ namespace HelperService.Common
                     if (!string.IsNullOrEmpty(value))
                         pro.SetValue(d, value);
                 }
-            }catch(ArgumentNullException ex)
+            }
+            catch (ArgumentNullException ex)
             {
                 SingletonLogger.Info(ex.Message);
             }
@@ -69,13 +100,13 @@ namespace HelperService.Common
         public string GetCookies(string strCookeName)
         {
             string value = string.Empty;
-                MyHttpContext.Current.Request.Cookies.TryGetValue(strCookeName, out value);
+            MyHttpContext.Current.Request.Cookies.TryGetValue(strCookeName, out value);
             return value;
         }
 
         public T GetRequest<T>(string strRequestName, T d)
         {
-            String val=MyHttpContext.Current.Request.Query[strRequestName].FirstOrDefault();
+            String val = MyHttpContext.Current.Request.Query[strRequestName].FirstOrDefault();
             if (string.IsNullOrEmpty(val))
                 return default(T);
             else
@@ -84,7 +115,7 @@ namespace HelperService.Common
 
         public T GetSession<T>(string strSessionName)
         {
-            T t=MyHttpContext.Current.Session.GetObject<T>(strSessionName);
+            T t = MyHttpContext.Current.Session.GetObject<T>(strSessionName);
             if (t == null)
                 return default(T);
             else
@@ -114,16 +145,49 @@ namespace HelperService.Common
 
         public bool SaveCache(string strCacheName, object obj)
         {
+            bool result = true;
+            try
+            {
+                _memoryCache.Set(strCacheName, obj);
+            }
+            catch (Exception ex)
+            {
+                result = false;
+                SingletonLogger.Error(ex.Message);
+            }
+            return result;
             throw new NotImplementedException();
         }
 
         public bool SaveCache(string strCacheName, object obj, DateTime datTimeOut)
         {
+            bool result = true;
+            try
+            {
+                _memoryCache.Set(strCacheName, obj, datTimeOut);
+            }
+            catch (Exception ex)
+            {
+                result = false;
+                SingletonLogger.Error(ex.Message);
+            }
+            return result;
             throw new NotImplementedException();
         }
 
         public bool SaveCache(string strCacheName, object obj, DateTime datTimeOut, string strTableName)
         {
+            bool result = true;
+            try
+            {
+                _memoryCache.Set(strCacheName, obj, datTimeOut);
+            }
+            catch (Exception ex)
+            {
+                result = false;
+                SingletonLogger.Error(ex.Message);
+            }
+            return result;
             throw new NotImplementedException();
         }
 
@@ -133,7 +197,7 @@ namespace HelperService.Common
                 return false;
             ClaimsIdentity identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme);
             identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, myuser.UserGUID.ToString()));
-            identity.AddClaim(new Claim(ClaimTypes.Sid,myuser.UserCode));
+            identity.AddClaim(new Claim(ClaimTypes.Sid, myuser.UserCode));
             identity.AddClaim(new Claim(ClaimTypes.Name, myuser.UserName));
             ClaimsPrincipal principal = new ClaimsPrincipal(identity);
             MyHttpContext.Current.SignInAsync(

@@ -22,13 +22,3 @@ F:\Fish-Store\DemoERP\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfoInputs.cac
 F:\Fish-Store\DemoERP\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfo.cs
 F:\Fish-Store\DemoERP\Model\obj\Debug\netcoreapp2.1\Model.dll
 F:\Fish-Store\DemoERP\Model\obj\Debug\netcoreapp2.1\Model.pdb
-F:\Fish-Store\DemoERP\Code\Web\bin\netcoreapp2.1\Model.deps.json
-F:\Fish-Store\DemoERP\Code\Web\bin\netcoreapp2.1\Model.dll
-F:\Fish-Store\DemoERP\Code\Web\bin\netcoreapp2.1\Model.pdb
-F:\Fish-Store\DemoERP\Code\Web\bin\netcoreapp2.1\Model.xml
-F:\Fish-Store\DemoERP\Code\Model\obj\Debug\netcoreapp2.1\Model.csprojAssemblyReference.cache
-F:\Fish-Store\DemoERP\Code\Model\obj\Debug\netcoreapp2.1\Model.csproj.CoreCompileInputs.cache
-F:\Fish-Store\DemoERP\Code\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfoInputs.cache
-F:\Fish-Store\DemoERP\Code\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfo.cs
-F:\Fish-Store\DemoERP\Code\Model\obj\Debug\netcoreapp2.1\Model.dll
-F:\Fish-Store\DemoERP\Code\Model\obj\Debug\netcoreapp2.1\Model.pdb

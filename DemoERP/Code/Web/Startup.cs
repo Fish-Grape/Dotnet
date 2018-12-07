@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Reflection;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using DataContext;
 using Extensions.PermissionMiddleware;
 using Extensions.SessionExtensions;
-using IDal.Common;
 using IDal.User;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
@@ -22,7 +19,7 @@ using Microsoft.Extensions.Logging;
 using NLog.Extensions.Logging;
 using NLog.Web;
 using Web.Config;
-using Web.Controllers;
+using Web.Helper;
 
 namespace Web
 {
@@ -46,6 +43,9 @@ namespace Web
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+
+            //启用缓存
+            services.AddMemoryCache();
 
             //扩展HttpContext
             services.AddHttpContextAccessor();
@@ -106,14 +106,8 @@ namespace Web
             //验证中间件
             app.UseAuthentication();
             //动态调用权限类(避免直接引用业务实现层)
-            Assembly userRight = DefaultModuleRegister.GetAssembly("SqlServerDal");
-            //.GetType("SqlServerDal.User.UserRightSer");
-            Type SqlHelperSer = DefaultModuleRegister.GetAssembly("HelperService").GetType("HelperService.Common.SqlHelperSer");
-            Type Config = DefaultModuleRegister.GetAssembly("HelperService").GetType("HelperService.Common.ConfigSer");
-            object[] parameters = new object[1];
-            parameters[0] = (IConfigSer)Activator.CreateInstance(Config);
-            parameters[0] = Activator.CreateInstance(SqlHelperSer, parameters);
-            IUserRightSer objUserRight = (IUserRightSer)userRight.CreateInstance("SqlServerDal.User.UserRightSer", true, BindingFlags.Default, null, parameters, null, null);
+            ReflectionHelper reflection= new ReflectionHelper();
+            IUserRightSer objUserRight = reflection.GetUserRightSer();
             ////添加权限中间件, 一定要放在app.UseAuthentication后
             app.UsePermission(new PermissionMiddlewareOption()
             {

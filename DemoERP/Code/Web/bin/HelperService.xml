@@ -4,10 +4,42 @@
         <name>HelperService</name>
     </assembly>
     <members>
+        <member name="P:HelperService.Aop.Log.LoggingInterceptorSer.SingletonLogger">
+            <summary>
+            获取单例Logger
+            </summary>
+        </member>
+        <member name="M:HelperService.Aop.Log.LoggingInterceptorSer.GetDefaultValue(System.Type)">
+            <summary>
+            获取变量的默认值
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HelperService.Common.CacheMngSer">
+            <summary>
+            Redis实现类
+            </summary>
+        </member>
+        <member name="M:HelperService.Common.CacheMngSer.Exists(System.String)">
+            <summary>
+            验证缓存项是否存在
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns></returns>
+        </member>
         <member name="P:HelperService.Common.GetHelperSer.SingletonLogger">
             <summary>
             获取单例Logger
             </summary>
+        </member>
+        <member name="M:HelperService.Common.GetHelperSer.ConvertToList``1(System.String)">
+            <summary>
+            DataSetToList
+            </summary>
+            <typeparam name="T">转换类型</typeparam>
+            <param name="DataTable">数据源</param>
+            <returns></returns>
         </member>
         <member name="M:HelperService.Common.SqlHelperSer.ConvertToList``1(System.Data.DataTable)">
             <summary>
