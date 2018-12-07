@@ -2,6 +2,8 @@
 using IDal.Aop.ILog;
 using IDal.Common;
 using IDal.User;
+using IHelperService.Aop;
+using IHelperService.Helper;
 using System;
 using System.Collections.Generic;
 using System.Data;

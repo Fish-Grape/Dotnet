@@ -17,6 +17,13 @@
 
   <ItemGroup>
     <Compile Remove="Aop\IAopInterceptorSer.cs" />
+    <Compile Remove="Aop\ICache\IQCachable.cs" />
+    <Compile Remove="Aop\ICache\IQCaching.cs" />
+    <Compile Remove="Aop\ILog\ILogging.cs" />
+    <Compile Remove="Common\IConfigSer.cs" />
+    <Compile Remove="Common\IGetHelperSer.cs" />
+    <Compile Remove="Common\ISqlHelperSer.cs" />
+    <Compile Remove="Common\IVerifyCodeSer.cs" />
   </ItemGroup>
 
   <ItemGroup>

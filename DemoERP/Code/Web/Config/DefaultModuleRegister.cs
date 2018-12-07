@@ -1,7 +1,6 @@
 ﻿using Autofac;
 using Autofac.Extras.DynamicProxy;
-using IDal.Aop.ICache;
-using IDal.Aop.ILog;
+using IHelperService.Aop;
 using Microsoft.AspNetCore.Mvc.ApplicationParts;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using System;
@@ -38,13 +37,14 @@ namespace Web.Config
             //添加AOP支持
             //面向接口使用AOP
             SetMultiInterceptor(builder, "SqlServerDal", typeof(ILogging), typeof(AopInterceptor));//记录错误日志
-            SetMultiInterceptor(builder, "HelperService", typeof(IQCaching), typeof(AopInterceptor));//启用缓存
+            SetMultiInterceptor(builder, "HelperService", typeof(ILogging), typeof(AopInterceptor));//记录错误日志
+            SetMultiInterceptor(builder, "HelperService", typeof(IQCaching), typeof(AopInterceptor),true);//启用缓存
         }
 
-        private void SetMultiInterceptor(ContainerBuilder builder,string assemblyName,Type It,Type ImpT)
+        private void SetMultiInterceptor(ContainerBuilder builder,string assemblyName,Type It,Type ImpT,bool falg=false)
         {
             builder.RegisterAssemblyTypes(reflection.GetAssembly(assemblyName))
-             .Where(type => It.IsAssignableFrom(type) && !type.GetTypeInfo().IsAbstract)
+             .Where(type =>(falg ? (type.Name== "SqlHelperSer") : true) && It.IsAssignableFrom(type) && !type.GetTypeInfo().IsAbstract)
              .AsImplementedInterfaces()
              .InstancePerLifetimeScope()
              .EnableInterfaceInterceptors()

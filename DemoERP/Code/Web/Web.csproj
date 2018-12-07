@@ -52,6 +52,7 @@
     <ProjectReference Include="..\DataContext\DataContext.csproj" />
     <ProjectReference Include="..\Extensions\Extensions.csproj" />
     <ProjectReference Include="..\IDal\IDal.csproj" />
+    <ProjectReference Include="..\IHelperService\IHelperService.csproj" />
     <ProjectReference Include="..\Model\Model.csproj" />
   </ItemGroup>
 

@@ -25,3 +25,14 @@ F:\Fish-Store\DemoERP\HelperService\obj\Debug\netcoreapp2.1\HelperService.Assemb
 F:\Fish-Store\DemoERP\HelperService\obj\Debug\netcoreapp2.1\HelperService.csproj.CopyComplete
 F:\Fish-Store\DemoERP\HelperService\obj\Debug\netcoreapp2.1\HelperService.dll
 F:\Fish-Store\DemoERP\HelperService\obj\Debug\netcoreapp2.1\HelperService.pdb
+F:\Fish-Store\DemoERP\Code\Web\bin\netcoreapp2.1\HelperService.deps.json
+F:\Fish-Store\DemoERP\Code\Web\bin\netcoreapp2.1\HelperService.dll
+F:\Fish-Store\DemoERP\Code\Web\bin\netcoreapp2.1\HelperService.pdb
+F:\Fish-Store\DemoERP\Code\Web\bin\netcoreapp2.1\HelperService.xml
+F:\Fish-Store\DemoERP\Code\HelperService\obj\Debug\netcoreapp2.1\HelperService.csprojAssemblyReference.cache
+F:\Fish-Store\DemoERP\Code\HelperService\obj\Debug\netcoreapp2.1\HelperService.csproj.CoreCompileInputs.cache
+F:\Fish-Store\DemoERP\Code\HelperService\obj\Debug\netcoreapp2.1\HelperService.AssemblyInfoInputs.cache
+F:\Fish-Store\DemoERP\Code\HelperService\obj\Debug\netcoreapp2.1\HelperService.AssemblyInfo.cs
+F:\Fish-Store\DemoERP\Code\HelperService\obj\Debug\netcoreapp2.1\HelperService.csproj.CopyComplete
+F:\Fish-Store\DemoERP\Code\HelperService\obj\Debug\netcoreapp2.1\HelperService.dll
+F:\Fish-Store\DemoERP\Code\HelperService\obj\Debug\netcoreapp2.1\HelperService.pdb

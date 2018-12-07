@@ -12,6 +12,8 @@ using System.Data;
 using IDal.Aop.ILog;
 using DataContext;
 using Microsoft.EntityFrameworkCore;
+using IHelperService.Aop;
+using IHelperService.Helper;
 
 namespace SqlServerDal.User
 {

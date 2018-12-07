@@ -15,9 +15,9 @@ namespace Web.Helper
         public IUserRightSer GetUserRightSer()
         {
             Type userRight = GetAssembly("SqlServerDal").GetType("SqlServerDal.User.UserRightSer");
-            Type SqlHelperSer = GetAssembly("HelperService").GetType("HelperService.Common.SqlHelperSer");
-            Type CacheMngSer = GetAssembly("HelperService").GetType("HelperService.Common.CacheMngSer");
-            Type Config = GetAssembly("HelperService").GetType("HelperService.Common.ConfigSer");
+            Type SqlHelperSer = GetAssembly("HelperService").GetType("HelperService.Helper.SqlHelperSer");
+            Type CacheMngSer = GetAssembly("SqlServerDal").GetType("HelperService.Common.CacheMngSer");
+            Type Config = GetAssembly("HelperService").GetType("HelperService.Config.ConfigSer");
             object[] parameters = new object[1];
             parameters[0] = Activator.CreateInstance(Config);
             parameters[0] = Activator.CreateInstance(SqlHelperSer, parameters);

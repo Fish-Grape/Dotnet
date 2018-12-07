@@ -2841,7 +2841,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "runtime.native.System.Data.SqlClient.sni/4.4.0": {
+      "runtime.native.System.Data.SqlClient.sni/4.5.0": {
         "type": "package",
         "dependencies": {
           "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
@@ -3225,13 +3225,13 @@
           "ref/netstandard1.3/System.Console.dll": {}
         }
       },
-      "System.Data.SqlClient/4.5.1": {
+      "System.Data.SqlClient/4.6.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.Registry": "4.5.0",
           "System.Security.Principal.Windows": "4.5.0",
           "System.Text.Encoding.CodePages": "4.5.0",
-          "runtime.native.System.Data.SqlClient.sni": "4.4.0"
+          "runtime.native.System.Data.SqlClient.sni": "4.5.0"
         },
         "compile": {
           "ref/netcoreapp2.1/System.Data.SqlClient.dll": {}
@@ -4787,6 +4787,21 @@
         },
         "runtime": {
           "bin/placeholder/IDal.dll": {}
+        }
+      },
+      "IHelperService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Model": "1.0.0",
+          "NLog": "4.5.11",
+          "System.Data.SqlClient": "4.6.0"
+        },
+        "compile": {
+          "bin/placeholder/IHelperService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IHelperService.dll": {}
         }
       },
       "Model/1.0.0": {
@@ -7683,14 +7698,15 @@
         "runtime.native.system.nuspec"
       ]
     },
-    "runtime.native.System.Data.SqlClient.sni/4.4.0": {
-      "sha512": "A8v6PGmk+UGbfWo5Ixup0lPM4swuSwOiayJExZwKIOjTlFFQIsu3QnDXECosBEyrWSPryxBVrdqtJyhK3BaupQ==",
+    "runtime.native.System.Data.SqlClient.sni/4.5.0": {
+      "sha512": "X4hp5h5M2plTWZnUd79d0x4actSMj9L3Hv6e1Lu+oGi35XSaXg21ha4Rqmt2KrIesfUwMfpET8QhMkS1eiWqRQ==",
       "type": "package",
-      "path": "runtime.native.system.data.sqlclient.sni/4.4.0",
+      "path": "runtime.native.system.data.sqlclient.sni/4.5.0",
       "files": [
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+        "runtime.native.system.data.sqlclient.sni.4.5.0.nupkg.sha512",
         "runtime.native.system.data.sqlclient.sni.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -8487,10 +8503,10 @@
         "system.console.nuspec"
       ]
     },
-    "System.Data.SqlClient/4.5.1": {
-      "sha512": "qXTvTFkBds7bnN+ntBMHGvmH3pCAkfT4TE1z2Xvfqo4wKMQC77O4aXsYCc7dzCESC+/Gom6l0GLuebpFx7MDvg==",
+    "System.Data.SqlClient/4.6.0": {
+      "sha512": "DLhg881ETdy/OmlbBCjfXGVU2Xlm9x5yHwhcl33SAfCIG05hAbgMcvHUZruIG1sBJolGzDhes7R7hAKPS1SOqw==",
       "type": "package",
-      "path": "system.data.sqlclient/4.5.1",
+      "path": "system.data.sqlclient/4.6.0",
       "files": [
         ".signature.p7s",
         "LICENSE.TXT",
@@ -8554,7 +8570,7 @@
         "runtimes/win/lib/netstandard1.3/System.Data.SqlClient.dll",
         "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.dll",
         "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.dll",
-        "system.data.sqlclient.4.5.1.nupkg.sha512",
+        "system.data.sqlclient.4.6.0.nupkg.sha512",
         "system.data.sqlclient.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -12644,6 +12660,11 @@
       "path": "../IDal/IDal.csproj",
       "msbuildProject": "../IDal/IDal.csproj"
     },
+    "IHelperService/1.0.0": {
+      "type": "project",
+      "path": "../IHelperService/IHelperService.csproj",
+      "msbuildProject": "../IHelperService/IHelperService.csproj"
+    },
     "Model/1.0.0": {
       "type": "project",
       "path": "../Model/Model.csproj",
@@ -12659,6 +12680,7 @@
       "DataContext >= 1.0.0",
       "Extensions >= 1.0.0",
       "IDal >= 1.0.0",
+      "IHelperService >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Http >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
@@ -12707,6 +12729,9 @@
             },
             "F:\\Fish-Store\\DemoERP\\Code\\IDal\\IDal.csproj": {
               "projectPath": "F:\\Fish-Store\\DemoERP\\Code\\IDal\\IDal.csproj"
+            },
+            "F:\\Fish-Store\\DemoERP\\Code\\IHelperService\\IHelperService.csproj": {
+              "projectPath": "F:\\Fish-Store\\DemoERP\\Code\\IHelperService\\IHelperService.csproj"
             },
             "F:\\Fish-Store\\DemoERP\\Code\\Model\\Model.csproj": {
               "projectPath": "F:\\Fish-Store\\DemoERP\\Code\\Model\\Model.csproj"
