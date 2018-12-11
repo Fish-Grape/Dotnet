@@ -1,0 +1,5 @@
+d:\documents\visual studio 2013\Projects\WebSocket\WebSocket\bin\Debug\WebSocket.exe.config
+d:\documents\visual studio 2013\Projects\WebSocket\WebSocket\bin\Debug\WebSocket.exe
+d:\documents\visual studio 2013\Projects\WebSocket\WebSocket\bin\Debug\WebSocket.pdb
+d:\documents\visual studio 2013\Projects\WebSocket\WebSocket\obj\Debug\WebSocket.exe
+d:\documents\visual studio 2013\Projects\WebSocket\WebSocket\obj\Debug\WebSocket.pdb
