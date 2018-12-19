@@ -1,0 +1,59 @@
+﻿@section header
+{
+    <link rel="stylesheet" href="/css/treetable.css" />
+}
+<link rel="stylesheet" href="~/js/ueditor/formdesign/bootstrap/css/bootstrap.min.css">
+<script src="~/js/ueditor/formdesign/jquery-1.7.2.min.js"></script>
+<script src="~/js/ueditor/formdesign/bootstrap/js/bootstrap.min.js"></script>
+
+<!--用户添加/编辑窗口-->
+<div id="divEdit">
+    <br />
+    <br />
+    <br />
+    <br />
+    <form class="layui-form" action="" id="formEdit">
+        <ul class="text-center">
+            <li>
+                <div id="app">
+                    <input name="OldPassword" v-model="OldPassword" type="password" class="loginpwd ipt"
+                           placeholder="请输入原密码……"
+                           lay-verify="required">
+                </div>
+            </li>
+            <li>
+                <input name="password" type="password" v-model="password"
+                       class="loginpwd ipt" placeholder="请输入新密码" lay-verify="required">
+            </li>
+            <li>
+                <input name="Password_two" type="password" v-model="Password_two" 
+                       class="loginpwd ipt" placeholder="请确认密码" lay-verify="required">
+            </li>
+            <li>
+                <button class="layui-btn" id="submit" lay-submit lay-filter="formSubmit">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </li>
+        </ul>
+
+    </form>
+</div>
+<script type="text/javascript" src="/layui/layui.js"></script>
+<script type="text/javascript">
+    layui.config({
+        base: "/js/"
+    }).use(['form', 'vue', 'ztree', 'layer', 'jquery', 'table', 'droptree', 'openauth', 'utils'], function () {
+        var layer = layui.layer;
+        var form = layui.form;
+        //提交数据
+        form.on('submit(formSubmit)',
+            function (data) {
+                $.post("/UserManager/ChangePassword",
+                    data.field,
+                    function (data) {
+                        layer.msg(data.Message);
+                    },
+                    "json");
+                return false;
+            });
+    });
+</script>

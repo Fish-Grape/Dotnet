@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IHelperService</name>
+    </assembly>
+    <members>
+        <member name="M:IHelperService.Helper.IGetHelperSer.ConvertToList``1(System.String)">
+            <summary>
+            DataSetToList
+            </summary>
+            <typeparam name="T">转换类型</typeparam>
+            <param name="DataTable">数据源</param>
+            <returns></returns>
+        </member>
+        <member name="M:IHelperService.Helper.IGetHelperSer.GetCache``1(System.String,``0)">
+            <summary>
+            系统自带缓存
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="strCacheName"></param>
+            <param name="d"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IHelperService.Helper.IGetHelperSer.SaveCache(System.String,System.Object)">
+            <summary>
+            系统自带缓存
+            </summary>
+            <param name="strCacheName"></param>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IHelperService.Helper.IGetHelperSer.SaveCache(System.String,System.Object,System.DateTime)">
+            <summary>
+            系统自带缓存
+            </summary>
+            <param name="strCacheName"></param>
+            <param name="obj"></param>
+            <param name="datTimeOut"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IHelperService.Helper.IGetHelperSer.SaveCache(System.String,System.Object,System.DateTime,System.String)">
+            <summary>
+            系统自带缓存
+            </summary>
+            <param name="strCacheName"></param>
+            <param name="obj"></param>
+            <param name="datTimeOut"></param>
+            <param name="strTableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IHelperService.Helper.IGetHelperSer.AESEncrypt(System.String,System.String)">
+            <summary>
+            加密AES
+            </summary>
+            <param name="input"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IHelperService.Helper.IGetHelperSer.AESDecrypt(System.String,System.String)">
+            <summary>
+            解密AES
+            </summary>
+            <param name="input"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IHelperService.VerifyCode.IVerifyCodeSer.RndNum(System.Int32)">
+            <summary>  
+            该方法用于生成指定位数的随机数  
+            </summary>  
+            <param name="VcodeNum">参数是随机数的位数</param>  
+            <returns>返回一个随机数字符串</returns>  
+        </member>
+        <member name="M:IHelperService.VerifyCode.IVerifyCodeSer.Create(System.String@,System.Int32)">
+            <summary>  
+            该方法是将生成的随机数写入图像文件  
+            </summary>  
+            <param name="code">code是一个随机数</param>
+            <param name="numbers">生成位数（默认4位）</param>  
+        </member>
+    </members>
+</doc>

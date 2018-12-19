@@ -1,0 +1,11 @@
+F:\Fish-Store\DemoERP\Dll\netcoreapp2.1\DataContext.deps.json
+F:\Fish-Store\DemoERP\Dll\netcoreapp2.1\DataContext.dll
+F:\Fish-Store\DemoERP\Dll\netcoreapp2.1\DataContext.pdb
+F:\Fish-Store\DemoERP\Dll\netcoreapp2.1\DataContext.xml
+F:\Fish-Store\DemoERP\DataContext\obj\Release\netcoreapp2.1\DataContext.csprojAssemblyReference.cache
+F:\Fish-Store\DemoERP\DataContext\obj\Release\netcoreapp2.1\DataContext.csproj.CoreCompileInputs.cache
+F:\Fish-Store\DemoERP\DataContext\obj\Release\netcoreapp2.1\DataContext.AssemblyInfoInputs.cache
+F:\Fish-Store\DemoERP\DataContext\obj\Release\netcoreapp2.1\DataContext.AssemblyInfo.cs
+F:\Fish-Store\DemoERP\DataContext\obj\Release\netcoreapp2.1\DataContext.csproj.CopyComplete
+F:\Fish-Store\DemoERP\DataContext\obj\Release\netcoreapp2.1\DataContext.dll
+F:\Fish-Store\DemoERP\DataContext\obj\Release\netcoreapp2.1\DataContext.pdb

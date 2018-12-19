@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Web</name>
+    </assembly>
+    <members>
+        <member name="M:Web.Helper.ReflectionHelper.GetUserRightSer">
+            <summary>
+            反射获取IUserRightSer
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Web.Helper.ReflectionHelper.GetObjByReflect(System.String,System.String,System.Object[])">
+            <summary>
+            反射获取指定类型的对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="assemblyName">程序集</param>
+            <param name="fullName">全类名</param>
+            <param name="parameters">参数</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

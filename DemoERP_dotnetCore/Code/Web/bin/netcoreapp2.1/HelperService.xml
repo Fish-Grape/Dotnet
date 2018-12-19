@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HelperService</name>
+    </assembly>
+    <members>
+        <member name="P:HelperService.Helper.GetHelperSer.SingletonLogger">
+            <summary>
+            获取单例Logger
+            </summary>
+        </member>
+        <member name="M:HelperService.Helper.GetHelperSer.ConvertToList``1(System.String)">
+            <summary>
+            DataSetToList
+            </summary>
+            <typeparam name="T">转换类型</typeparam>
+            <param name="DataTable">数据源</param>
+            <returns></returns>
+        </member>
+        <member name="M:HelperService.Helper.SqlHelperSer.ConvertToList``1(System.Data.DataTable)">
+            <summary>
+            DataSetToList
+            </summary>
+            <typeparam name="T">转换类型</typeparam>
+            <param name="DataTable">数据源</param>
+            <returns></returns>
+        </member>
+        <member name="M:HelperService.Helper.SqlHelperSer.ExecuteToList``1(System.String,System.Data.IDataParameter[],IHelperService.Helper.ConnctionType)">
+            <summary>
+            执行存储过程
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="storedProcName"></param>
+            <param name="parameters"></param>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HelperService.VerifyCode.VerifyCodeSer.RndNum(System.Int32)">
+            <summary>  
+            该方法用于生成指定位数的随机数  
+            </summary>  
+            <param name="VcodeNum">参数是随机数的位数</param>  
+            <returns>返回一个随机数字符串</returns>  
+        </member>
+        <member name="M:HelperService.VerifyCode.VerifyCodeSer.Create(System.String@,System.Int32)">
+            <summary>  
+            该方法是将生成的随机数写入图像文件  
+            </summary>  
+            <param name="code">code是一个随机数</param>
+            <param name="numbers">生成位数（默认4位）</param>  
+        </member>
+        <member name="M:HelperService.VerifyCode.VerifyCodeSer.Disturb(System.Random,System.Drawing.Bitmap,System.Drawing.Graphics,System.Int32,System.Int32)">
+            <summary>
+            绘制干扰线
+            </summary>
+            <param name="random"></param>
+            <param name="bitmap"></param>
+            <param name="graphics"></param>
+            <param name="lineCount"></param>
+            <param name="pointCount"></param>
+        </member>
+    </members>
+</doc>

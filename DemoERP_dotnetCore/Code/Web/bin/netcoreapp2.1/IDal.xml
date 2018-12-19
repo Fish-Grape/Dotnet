@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IDal</name>
+    </assembly>
+    <members>
+        <member name="M:IDal.Common.ICacheMngSer.Exists(System.String)">
+            <summary>
+            验证缓存项是否存在
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.ExistsAsync(System.String)">
+            <summary>
+            验证缓存项是否存在（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.Add(System.String,System.Object)">
+            <summary>
+            添加缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">缓存Value</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.AddAsync(System.String,System.Object)">
+            <summary>
+            添加缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">缓存Value</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.Add(System.String,System.Object,System.TimeSpan,System.TimeSpan)">
+            <summary>
+            添加缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">缓存Value</param>
+            <param name="expiresSliding">滑动过期时长（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
+            <param name="expiressAbsoulte">绝对过期时长</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.AddAsync(System.String,System.Object,System.TimeSpan,System.TimeSpan)">
+            <summary>
+            添加缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">缓存Value</param>
+            <param name="expiresSliding">滑动过期时长（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
+            <param name="expiressAbsoulte">绝对过期时长</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.Add(System.String,System.Object,System.TimeSpan,System.Boolean)">
+            <summary>
+            添加缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">缓存Value</param>
+            <param name="expiresIn">缓存时长</param>
+            <param name="isSliding">是否滑动过期（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.AddAsync(System.String,System.Object,System.TimeSpan,System.Boolean)">
+            <summary>
+            添加缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">缓存Value</param>
+            <param name="expiresIn">缓存时长</param>
+            <param name="isSliding">是否滑动过期（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.Remove(System.String)">
+            <summary>
+            删除缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.RemoveAsync(System.String)">
+            <summary>
+            删除缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.RemoveAll(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            批量删除缓存
+            </summary>
+            <param name="key">缓存Key集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.RemoveAllAsync(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            批量删除缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.Get``1(System.String)">
+            <summary>
+            获取缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.GetAsync``1(System.String)">
+            <summary>
+            获取缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.Get(System.String)">
+            <summary>
+            获取缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.GetAsync(System.String)">
+            <summary>
+            获取缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.GetAll(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            获取缓存集合
+            </summary>
+            <param name="keys">缓存Key集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.GetAllAsync(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            获取缓存集合（异步方式）
+            </summary>
+            <param name="keys">缓存Key集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.Replace(System.String,System.Object)">
+            <summary>
+            修改缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">新的缓存Value</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.ReplaceAsync(System.String,System.Object)">
+            <summary>
+            修改缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">新的缓存Value</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.Replace(System.String,System.Object,System.TimeSpan,System.TimeSpan)">
+            <summary>
+            修改缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">新的缓存Value</param>
+            <param name="expiresSliding">滑动过期时长（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
+            <param name="expiressAbsoulte">绝对过期时长</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.ReplaceAsync(System.String,System.Object,System.TimeSpan,System.TimeSpan)">
+            <summary>
+            修改缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">新的缓存Value</param>
+            <param name="expiresSliding">滑动过期时长（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
+            <param name="expiressAbsoulte">绝对过期时长</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.Replace(System.String,System.Object,System.TimeSpan,System.Boolean)">
+            <summary>
+            修改缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">新的缓存Value</param>
+            <param name="expiresIn">缓存时长</param>
+            <param name="isSliding">是否滑动过期（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.ReplaceAsync(System.String,System.Object,System.TimeSpan,System.Boolean)">
+            <summary>
+            修改缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">新的缓存Value</param>
+            <param name="expiresIn">缓存时长</param>
+            <param name="isSliding">是否滑动过期（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.Common.ICacheMngSer.ConvertObj``1(StackExchange.Redis.RedisValue)">
+            <summary>
+            将redis类型转换成C#类型
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:IDal.System.IMenuSer.GetMenuViewByGUID(System.Guid)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:IDal.System.IMenuSer.GetMenuList”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:IDal.System.IMenuSer.GetMenuListByRightGUID(System.Guid)”忽略有格式错误的 XML 注释 -->
+        <member name="M:IDal.System.IMenuSer.GetMenuListByUserGUID(System.Guid)">
+            <summary>
+            根据员工Id获得菜单
+            </summary>
+            <param name="UserGUID">用户Id</param>
+        </member>
+        <member name="M:IDal.System.IMenuSer.Insert(Model.System.MenuModel)">
+            <summary>
+            新增菜单
+            </summary>
+            <param name="moMenuModel">菜单属性</param>
+            <returns>存储过程返回参数</returns>
+        </member>
+        <member name="M:IDal.System.IMenuSer.Change(Model.System.MenuModel)">
+            <summary>
+            修改菜单
+            </summary>
+            <param name="moMenuModel">系统菜单属性</param>
+            <returns>存储过程返回参数</returns>
+        </member>
+        <member name="M:IDal.System.IMenuSer.Delete(System.Guid)">
+            <summary>
+            修改菜单
+            </summary>
+            <param name="MenuId">菜单ID</param>
+            <returns>存储过程返回参数</returns>
+        </member>
+        <member name="M:IDal.User.IMyuserBllSer.Login(System.String,System.String,Model.User.Myuser)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="usr">用户名</param>
+            <param name="pwd">密码</param>
+            <param name="DoMain">域名或端口</param>
+            <returns>会员资料实体</returns>
+        </member>
+        <member name="M:IDal.User.IMyuserBllSer.GetUserByUserCode(System.String)">
+            <summary>
+            根据用户名获取用户
+            </summary>
+            <param name="UserCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.User.IMyuserBllSer.ModifyPassword(System.Guid,System.String,System.String)">
+            <summary>
+            修改密码
+            </summary>
+            <param name="id"></param>
+            <param name="pwd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.User.IMyuserBllSer.ResetPassword(System.Guid,System.String)">
+            <summary>
+            重置密码
+            </summary>
+            <param name="Id">用户id</param>
+            <param name="Pwd">密码</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDal.User.IMyuserBllSer.ActivateUser(System.Guid)">
+            <summary>
+            启用停用
+            </summary>
+            <param name="Id">用户ID</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
