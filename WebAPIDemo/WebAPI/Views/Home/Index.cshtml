@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>WebApi</title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btn1").click(function () {
+                $.post("/api/Course/PostCourse",
+                    {},
+                    function (data, status) {
+                        alert(data);
+                    }
+                );
+            });
+
+            $("#btn2").click(function () {
+                $.post("/api/Course/PostCourseByID",
+                    {"":2000},//多个参数可以用实体参数或json传送
+                    function (data, status) {
+                        alert(data);
+                    }
+                );
+            });
+
+            $("#btn3").click(function () {
+                $.post("/api/Course/PostCourseByModel",
+                    { ID: 2000, CourseName:'哈哈哈' },//多个参数可以用实体参数或json传送
+                    function (data, status) {
+                        alert(data);
+                    }
+                );
+            });
+        });
+    </script>
+</head>
+<body>
+    <p><a href="api/Course">1、点击测试</a></p>
+    <p><a href="api/Course/100">2、点击测试</a></p>
+    <p><a href="api/Course/100?ID=2000">3、点击测试</a></p>
+    <p><input type="button" id="btn1" value="post传送" /></p>
+    <p><input type="button" id="btn2" value="post有参数传送" /></p>
+    <p><input type="button" id="btn3" value="post模型传送" /></p>
+</body>
+</html>
