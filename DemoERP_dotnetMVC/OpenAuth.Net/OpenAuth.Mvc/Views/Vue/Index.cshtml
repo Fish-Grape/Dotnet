@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    {{message}}<br />
+    {{messageReverse}}<br />
+    <input type="text" v-model="message" v-on:click="changeBg" :title="message" /><br />
+</div>
+
+<script type="text/javascript">
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            message:'爱上覅噶私分尬收款方哈搜关闭'
+        },
+        computed: {
+            messageReverse: function () {
+                return this.message.split('').reverse().join('');
+            }
+        },
+        methods: {
+            changeBg: function (ev) {
+                ev.target.style.background = 'red';
+            }
+        },
+        mounted: function () {
+            alert("mounted触发");//挂载时触发
+        },
+        updated: function () {
+            alert("updated触发");//数据更新时触发
+        },
+        watch: {
+            message: function (news, olds) {
+                alert("新值为：" + news);
+                alert("旧值为：" + olds);
+            }
+        }
+    });
+</script>

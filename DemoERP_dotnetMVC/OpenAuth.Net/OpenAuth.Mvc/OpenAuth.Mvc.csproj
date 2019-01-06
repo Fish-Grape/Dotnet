@@ -621,6 +621,7 @@
     <Content Include="userJs\preview.js" />
     <Content Include="userJs\forms.js" />
     <Content Include="Views\Home\git.cshtml" />
+    <Content Include="Views\Vue\VueComponent.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

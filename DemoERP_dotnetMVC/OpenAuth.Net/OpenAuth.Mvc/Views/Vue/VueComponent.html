@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        {{message}}<br/>
+        <my-header></my-header>
+    </div>
+    <div id="app2">
+        <my-header></my-header>
+    </div>
+
+    <script type="text/javascript">
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                message: "hello vue!!!"
+            },
+            components: {
+                'my-header': {
+                    template: "<h2>标题{{message}}</h2>",
+                    data: function () {
+                        return {
+                            message: "hello my-header!!!"
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

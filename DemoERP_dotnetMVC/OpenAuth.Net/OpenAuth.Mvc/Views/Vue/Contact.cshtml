@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app3">
+    <my-header :list="list"></my-header>
+    <template id="temp">
+        <div>
+            <h2>{{message}}</h2>
+            <ul>
+                <li v-for="item in list">{{item}}</li>
+            </ul>
+        </div>
+    </template>
+</div>
+
+
+<script type="text/javascript">
+    var vm = new Vue({
+        el: '#app3',
+        data: {
+            list:['一','二','三']
+        },
+        components: {
+            'my-header': {
+                template: "#temp",//指定模板
+                data: function () {
+                    return {
+                        message: "hello my-header"
+                    }
+                },
+                props:['list'] //父组件向子组件进行通信操作
+            }
+        }
+    });
+</script>
